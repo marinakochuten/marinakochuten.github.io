@@ -6,13 +6,13 @@ about:
   image-shape: rounded
   image-width: 21em
   links:
-    - text: LinkedIn
+    - icon: linkedin
       href: https://www.linkedin.com/in/marina-kochuten-4786b6324/
       target: _blank
-    - text: GitHub
+    - icon: github
       href: https://github.com/marinakochuten
       target: _blank
-    - text: Email
+    - icon: envelope
       href: mailto:marinakochuten@bren.ucsb.edu
 
 ---

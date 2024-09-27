@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Marina Kochuten",
+    "section": "",
+    "text": "Hi! I’m Marina. Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. I am constantly curious, creative, and eager to apply my new data science skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and adventuring in my self-built campervan. Poke around my site to learn more about me and my work!"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Marina Kochuten",
+    "section": "Education",
+    "text": "Education\nsome text here"
+  },
+  {
+    "objectID": "index.html#professional-experience",
+    "href": "index.html#professional-experience",
+    "title": "Marina Kochuten",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nmore text here"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

@@ -1,3 +1,28 @@
 ---
-title: "marinakochuten.github.io"
+title: "Marina Kochuten"
+image: kochuten_headshot.jpg
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 21em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/marina-kochuten-4786b6324/
+      target: _blank
+    - text: GitHub
+      href: https://github.com/marinakochuten
+      target: _blank
+    - text: Email
+      href: mailto:marinakochuten@bren.ucsb.edu
+
 ---
+
+Hi! I’m Marina. Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. I am constantly curious, creative, and eager to apply my new data science skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and adventuring in my self-built campervan. Poke around my site to learn more about me and my work! 
+
+## Education
+
+some text here
+
+## Professional Experience
+
+more text here

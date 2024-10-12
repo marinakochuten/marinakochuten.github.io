@@ -11,7 +11,7 @@
     "href": "index.html#education",
     "title": "Marina Kochuten",
     "section": "Education",
-    "text": "Education\nsome text here"
+    "text": "Education\nsome text here!"
   },
   {
     "objectID": "index.html#professional-experience",
@@ -25,6 +25,27 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "some text goes here\n\nsome text goes here"
+  },
+  {
+    "objectID": "DELETELATER/practice.html",
+    "href": "DELETELATER/practice.html",
+    "title": "Here is my level one header",
+    "section": "",
+    "text": "Here is my level one header\nHere is my first paragraph\nHere is my second paragraph, where you can read more about MEDS.\nThis is very important text!"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-work",
+    "href": "about.html#what-i-do-for-work",
+    "title": "About",
+    "section": "",
+    "text": "some text goes here\n\nsome text goes here"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-fun",
+    "href": "about.html#what-i-do-for-fun",
+    "title": "About",
+    "section": "What I do for fun",
+    "text": "What I do for fun\n\ngive the people what they want, which is fun stuff\n\nhere is some more text\n\nhere is a line\nhere is another line"
   }
 ]

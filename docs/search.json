@@ -47,5 +47,40 @@
     "title": "About",
     "section": "What I do for fun",
     "text": "What I do for fun\n\ngive the people what they want, which is fun stuff\n\nhere is some more text\n\nhere is a line\nhere is another line"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "title": "blog post title",
+    "section": "This is my second",
+    "text": "This is my second\nHere’s my next paragraph2\nI’m citing Sam [1]\nHere is more random text. I’m going to cite a journal article now. [2]"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#footnotes",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#footnotes",
+    "title": "blog post title",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is a new footnote↩︎\nHere is my second footnote↩︎"
   }
 ]

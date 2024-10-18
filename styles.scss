@@ -8,6 +8,7 @@ $barlow-condensed: "Barlow Condensed", sans-serif;
 
 // Colors
 $cream: #f9f7f3;
+$cream2: #FDF3D1;
 $extra_light_green: #f0ead2;
 $dark_green: #656D4A;
 $medium_green: #A4AC86;
@@ -22,7 +23,7 @@ $body-bg: $cream; // body background
 $navbar-bg: $light_brown; // navbar background
 $navbar-fg: $cream;  // navbar text
 $navbar-hl: $plum;  // text color for page you are on
-$footer-bg: $extra_light_green;  // footer background
+$footer-bg: $cream2;  // footer background
 $footer-fg: $dark_green;  // footer text
 
 /*-- scss:rules --*/

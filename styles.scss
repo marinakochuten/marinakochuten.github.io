@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Create font variables 
+$barlow-condensed: "Barlow Condensed", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+// Colors
+$dark_green: #656D4A;
+$dark_brown: #674636;
+$cream: #FFF8E8;
+$yellow: #F3CA52;
+
+// Quarto Sass Variables
+$body-bg: $cream; // body background
+$navbar-bg: $dark_green; // navbar background
+$navbar-fg: $cream;  // navbar text
+$navbar-hl: $yellow;  // text color for page you are on
+$footer-bg: $cream;  // footer background
+$footer-fg: $dark_brown;  // footer text
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $montserrat;
+}
+
+h1, h2 {
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+  .title {
+    color: $dark_brown;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+
+  .darkbrown-text {
+    color: $dark_brown;
+  }
+  
+  .center-green {
+    color: $dark_green;
+    text-align: center;
+  }
+
+ .navbar-brand img {
+   max-height: 40px;
+   width: auto;
+ }
+ 
+ // figure caption text styling
+.figure-caption {
+  color: $dark_brown;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+
+  
+
+
+

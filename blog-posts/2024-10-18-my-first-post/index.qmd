@@ -1,0 +1,43 @@
+---
+title: "blog post title"
+description: "a short catchy description of the blog post"
+author:
+  - name: Marina Kochuten
+    url: https://marinakochuten.github.io/
+    affiliation: MEDS
+    affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
+date: 2024-10-18
+categories: [Quarto, MEDS, something-cool]
+toc: true
+bibliography: references.bib
+csl: plos-computational-biology.csl
+image: IMG_0190.JPG
+citation:
+  url: https://marinakochuten.github.io/blog-posts/2024-10-18-my-first-post/
+draft: true
+draft-mode: visible
+---
+
+## This is my first section
+
+I'm going to insert a footnote here[^1]
+
+[^1]: Here is a new footnote
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+
+knitr::include_graphics("IMG_0190.JPG")
+```
+
+## This is my second
+
+Here's my next paragraph[^2]
+
+[^2]: Here is my second footnote
+
+I'm citing Sam [@csik2022]
+
+Here is more random text. I'm going to cite a journal article now. [@gaynor2022]

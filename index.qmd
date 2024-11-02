@@ -1,5 +1,5 @@
 ---
-title: "Marina Kochuten"
+title: "---------------------"
 image: kochuten_headshot.jpg
 about:
   template: trestles
@@ -16,13 +16,20 @@ about:
       href: mailto:marinakochuten@bren.ucsb.edu
 
 ---
+::: darkbrown-text
+### Hi!
 
-Hi! I’m Marina. Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. I am constantly curious, creative, and eager to apply my new data science skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and adventuring in my self-built campervan. Poke around my site to learn more about me and my work! 
+**I’m Marina.** Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. As an emerging data scientist, I am constantly curious, creative, and eager to apply my newly developed skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and hanging with my pup Tahoma. Poke around my site to learn more about me and my work! 
 
-## Education
+### Education
 
-some text here!
+**Master of Environmental Data Science** (Expected June 2024)
 
-## Professional Experience
+- Bren School of Environmental Science & Management | University of California, Santa Barbara (UCSB)
 
-more text here
+
+**Bachelor of Science in Environmental Science & Resource Management** (December 2019)
+
+- University of Washington (UW), Seattle, WA
+- *Study Abroad*: Council on International Educational Exchange, Tropical Ecology & Conservation, Costa Rica (January – May 2019)
+:::

@@ -3,22 +3,27 @@ project:
   output-dir: docs
 
 website:
-  title: "Marina Kochuten"
+  title: "marina kochuten"
   navbar:
-    left:
+    right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: home
+      - href: about.qmd
+        text: about
       - href: resources.qmd
-        text: Resources
-
+        text: resources
+      - href: posts.qmd
+        text: blog
+  page-footer: 
+    background: light
+    left: Copyright 2024, Marina Kochuten
+    right: This website is built with {{< fa heart title="a solid heart icon" >}} & {{< fa brands github title="the octocat github icon" >}}
 format:
   html:
-    theme: 
-      light: minty
-      dark: solar
-    css: styles.css
+    theme: styles.scss
+    mainfont: Montserrat
     toc: false
+    page-layout: full
 
 editor: visual
 

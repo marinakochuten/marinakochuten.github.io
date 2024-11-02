@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Marina Kochuten",
+    "title": "———————",
     "section": "",
-    "text": "Hi! I’m Marina. Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. I am constantly curious, creative, and eager to apply my new data science skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and adventuring in my self-built campervan. Poke around my site to learn more about me and my work!"
+    "text": "Hi!\nI’m Marina. Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. As an emerging data scientist, I am constantly curious, creative, and eager to apply my newly developed skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and hanging with my pup Tahoma. Poke around my site to learn more about me and my work!\n\n\nEducation\nMaster of Environmental Data Science (Expected June 2024)\n\nBren School of Environmental Science & Management | University of California, Santa Barbara (UCSB)\n\nBachelor of Science in Environmental Science & Resource Management (December 2019)\n\nUniversity of Washington (UW), Seattle, WA\nStudy Abroad: Council on International Educational Exchange, Tropical Ecology & Conservation, Costa Rica (January – May 2019)"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Marina Kochuten",
     "section": "Education",
-    "text": "Education\nsome text here"
+    "text": "Education\nsome text here!"
   },
   {
     "objectID": "index.html#professional-experience",
@@ -25,6 +25,83 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "My passion for ecology stems from my heritage. I am an Alaskan Native and a member of the Native Village of False Pass. However, I was raised on the Swinomish Reservation in Northwestern Washington State, a tribe at the forefront of climate change adaptation. My appreciation for nature undoubtedly came from the beauty and cultural significance of my homelands.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRare plant monitoring in North Cascades (above) and Olympic National Parks (below)\n\n\nIn undergrad, I earned a BS in Environmental Science and Resource Management from the University of Washington (2019). Members of my community taught me early on the importance of environmental problem solving and pursuing a career in the environment is my way of continuing my peoples legacy of indigenous stewardship.\nMy undergraduate research included work with UW’s hydro-biogeochemistry lab studying methane emissions from permafrost thaw bogs, and a capstone project conducted in Costa Rica’s cloud forest examining the relationship between mycorrhizal abundance and soil organic carbon. After graduation, I worked alongside the National Parks Service as a field ecologist with UW Botanic Gardens’ RareCare program. My small team and I utilized GIS and field techniques to establish long-term monitoring plots for rare and endangered alpine plants throughout Washington’s Olympic and North Cascades National Parks.\nThrough my experiences with RareCare, I found myself increasingly drawn to the power held at the intersection of ecology and data science. Particularly how data can contribute to wildlife conservation, the protection of culturally significant species, and inclusivity in STEM.\n\n\n\nAs a graduate student, I am growing exponentially both personally and professionally. I am enjoying developing my coding skills, mostly in R and Python, and learning how my diverse experiences uniquely qualify me for environmental problem solving.\nStay tuned as I start to share projects that I’ve been working on.\n\n\n\nWhen my head is not buried in code, you can find me pursuing my many other interests:\n\nIndoors, I will probably be bead weaving, cooking, or re-reading my all time favorite book (Braiding Sweetgrass by Robin Wall Kimmerer)\nOutdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur\nOtherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I’m pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you’d like to chat DIY solar, woodworking tips, or road-trip planning Face Smile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy second home (on-wheels), Trashcan the Van, parked among the Giant Cardons in Baja, MX"
+  },
+  {
+    "objectID": "DELETELATER/practice.html",
+    "href": "DELETELATER/practice.html",
+    "title": "Here is my level one header",
+    "section": "",
+    "text": "Here is my level one header\nHere is my first paragraph\nHere is my second paragraph, where you can read more about MEDS.\nThis is very important text!"
+  },
+  {
+    "objectID": "about.html#what-i-do-for-work",
+    "href": "about.html#what-i-do-for-work",
+    "title": "About",
+    "section": "",
+    "text": "As a graduate student, I am growing exponentially both personally and professionally. I am enjoying developing my coding skills, mostly in R and Python, and learning how my diverse experiences uniquely qualify me for environmental problem solving.\nStay tuned as I start to share projects that I’ve been working on."
+  },
+  {
+    "objectID": "about.html#what-i-do-for-fun",
+    "href": "about.html#what-i-do-for-fun",
+    "title": "About",
+    "section": "",
+    "text": "When my head is not buried in code, you can find me pursuing my many other interests:\n\nIndoors, I will probably be bead weaving, cooking, or re-reading my all time favorite book (Braiding Sweetgrass by Robin Wall Kimmerer)\nOutdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur\nOtherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I’m pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to _ states, and 3 countries. Let me know if you’d like to chat DIY solar, woodworking tips, or road-trip planning Face Smile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy second home (on-wheels), Trashcan the Van, parked among the Giant Cardons in Baja, MX"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "title": "blog post title",
+    "section": "This is my second",
+    "text": "This is my second\nHere’s my next paragraph2\nI’m citing Sam [1]\nHere is more random text. I’m going to cite a journal article now. [2]"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog_posts/2024-10-18-my-first-post/index.html#footnotes",
+    "href": "blog_posts/2024-10-18-my-first-post/index.html#footnotes",
+    "title": "blog post title",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is a new footnote↩︎\nHere is my second footnote↩︎"
+  },
+  {
+    "objectID": "about.html#the-lore",
+    "href": "about.html#the-lore",
+    "title": "About",
+    "section": "",
+    "text": "My passion for ecology stems from my heritage. I am an Alaskan Native and a member of the Native Village of False Pass. However, I was raised on the Swinomish Reservation in Northwestern Washington State, a tribe at the forefront of climate change adaptation. My appreciation for nature undoubtedly came from the beauty and cultural significance of my homelands.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRare plant monitoring in North Cascades (above) and Olympic National Parks (below)\n\n\nIn undergrad, I earned a BS in Environmental Science and Resource Management from the University of Washington (2019). Members of my community taught me early on the importance of environmental problem solving and pursuing a career in the environment is my way of continuing my peoples legacy of indigenous stewardship.\nMy undergraduate research included work with UW’s hydro-biogeochemistry lab studying methane emissions from permafrost thaw bogs, and a capstone project conducted in Costa Rica’s cloud forest examining the relationship between mycorrhizal abundance and soil organic carbon. After graduation, I worked alongside the National Parks Service as a field ecologist with UW Botanic Gardens’ RareCare program. My small team and I utilized GIS and field techniques to establish long-term monitoring plots for rare and endangered alpine plants throughout Washington’s Olympic and North Cascades National Parks.\nThrough my experiences with RareCare, I found myself increasingly drawn to the power held at the intersection of ecology and data science. Particularly how data can contribute to wildlife conservation, the protection of culturally significant species, and inclusivity in STEM."
+  },
+  {
+    "objectID": "about.html#the-work",
+    "href": "about.html#the-work",
+    "title": "About",
+    "section": "",
+    "text": "As a graduate student, I am growing exponentially both personally and professionally. I am enjoying developing my coding skills, mostly in R and Python, and learning how my diverse experiences uniquely qualify me for environmental problem solving.\nStay tuned as I start to share projects that I’ve been working on."
+  },
+  {
+    "objectID": "about.html#the-play",
+    "href": "about.html#the-play",
+    "title": "About",
+    "section": "",
+    "text": "When my head is not buried in code, you can find me pursuing my many other interests:\n\nIndoors, I will probably be bead weaving, cooking, or re-reading my all time favorite book (Braiding Sweetgrass by Robin Wall Kimmerer)\nOutdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur\nOtherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I’m pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you’d like to chat DIY solar, woodworking tips, or road-trip planning Face Smile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy second home (on-wheels), Trashcan the Van, parked among the Giant Cardons in Baja, MX"
   }
 ]

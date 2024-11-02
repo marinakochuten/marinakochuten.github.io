@@ -3,15 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "Marina Kochuten"
+  title: "marina kochuten"
   navbar:
     right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: home
+      - href: about.qmd
+        text: about
       - href: resources.qmd
-        text: Resources
-      - posts.qmd
+        text: resources
+      - href: posts.qmd
+        text: blog
   page-footer: 
     background: light
     left: Copyright 2024, Marina Kochuten

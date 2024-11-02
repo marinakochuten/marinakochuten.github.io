@@ -5,48 +5,43 @@
 
 // Create font variables 
 $barlow-condensed: "Barlow Condensed", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 
 // Colors
-$cream: #f9f7f3;
-$cream2: #FDF3D1;
-$extra_light_green: #f0ead2;
 $dark_green: #656D4A;
-$medium_green: #A4AC86;
-$light_green: #C2C5AA;
-$tan: #B6AD90;
-$light_brown: #A68A64;
-$dark_brown: #7F4F24;
-$plum: #6D454C;
+$dark_brown: #674636;
+$cream: #FFF8E8;
+$yellow: #F3CA52;
 
 // Quarto Sass Variables
 $body-bg: $cream; // body background
-$navbar-bg: $light_brown; // navbar background
+$navbar-bg: $dark_green; // navbar background
 $navbar-fg: $cream;  // navbar text
-$navbar-hl: $plum;  // text color for page you are on
-$footer-bg: $cream2;  // footer background
-$footer-fg: $dark_green;  // footer text
+$navbar-hl: $yellow;  // text color for page you are on
+$footer-bg: $cream;  // footer background
+$footer-fg: $dark_brown;  // footer text
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $barlow-condensed;
+  font-family: $montserrat;
 }
 
 h1, h2 {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-weight: 400;
 }
 
   .title {
-    color: maroon;
+    color: $dark_brown;
   }
   
   .center-text {
     text-align: center;
   }
 
-  .darkgreen-text {
-    color: $dark_green;
+  .darkbrown-text {
+    color: $dark_brown;
   }
   
   .center-green {
@@ -58,4 +53,16 @@ h1, h2 {
    max-height: 40px;
    width: auto;
  }
+ 
+ // figure caption text styling
+.figure-caption {
+  color: $dark_brown;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+
+  
+
+
 

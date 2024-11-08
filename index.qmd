@@ -1,5 +1,5 @@
 ---
-title: "---------------------"
+title: "marina kochuten"
 image: kochuten_headshot.jpg
 about:
   template: trestles
@@ -17,11 +17,11 @@ about:
 
 ---
 ::: darkbrown-text
-### Hi!
+### hi!
 
 **I’m Marina.** Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. As an emerging data scientist, I am constantly curious, creative, and eager to apply my newly developed skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and hanging with my pup Tahoma. Poke around my site to learn more about me and my work! 
 
-### Education
+### education
 
 **Master of Environmental Data Science** (Expected June 2024)
 

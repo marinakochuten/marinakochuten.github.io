@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "about"
 subtitle: "a bit more about me, both inside and outside of my work"
 title-block-banner: true
 ---
@@ -28,7 +28,7 @@ Rare plant monitoring in North Cascades (above) and Olympic National Parks (belo
 :::
 
 
-In undergrad, I earned a BS in Environmental Science and Resource Management from the University of Washington (2019). Members of my community taught me early on the importance of environmental problem solving and pursuing a career in the environment is my way of continuing my peoples legacy of indigenous stewardship. 
+In undergrad, I earned a BS in Environmental Science and Resource Management from the University of Washington (2019). Members of my community taught me early on the importance of environmental problem solving and pursuing a career in the environment is my way of continuing the legacy of indigenous stewardship. 
 
 My undergraduate research included work with UW’s hydro-biogeochemistry lab studying methane emissions from permafrost thaw bogs, and a capstone project conducted in Costa Rica’s cloud forest examining the relationship between mycorrhizal abundance and soil organic carbon. After graduation, I worked alongside the National Parks Service as a field ecologist with UW Botanic Gardens’ RareCare program. My small team and I utilized GIS and field techniques to establish long-term monitoring plots for rare and endangered alpine plants throughout Washington’s Olympic and North Cascades National Parks. 
 
@@ -48,7 +48,7 @@ When my head is not buried in code, you can find me pursuing my many other inter
 
 - Indoors, I will probably be bead weaving, cooking, or re-reading my all time favorite book (Braiding Sweetgrass by Robin Wall Kimmerer)
 - Outdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur 
-- Otherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I'm pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you'd like to chat DIY solar, woodworking tips, or road-trip planning
+- Otherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I'm pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you'd like to chat DIY solar systems, woodworking tips, or road-trip planning
 `r fontawesome::fa("smile", fill = "#674636", a11y = "sem")`
 
 ::: {.column-margin}

@@ -1,6 +1,6 @@
 ---
 title: "marina kochuten"
-image: kochuten_headshot.jpg
+image: images/kochuten_headshot.jpg
 about:
   template: trestles
   image-shape: rounded

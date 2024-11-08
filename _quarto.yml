@@ -5,6 +5,7 @@ project:
 website:
   title: "marina kochuten"
   navbar:
+    title: false
     right:
       - href: index.qmd
         text: home

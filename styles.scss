@@ -63,6 +63,11 @@ h1, h2 {
 }
 
   
+div.quarto-about-trestles .about-entity .about-link {
+  color: $dark_brown;
+}
 
-
+div.quarto-about-trestles .about-entity .about-link:hover {
+  color: $yellow;
+}
 

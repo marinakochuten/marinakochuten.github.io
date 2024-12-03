@@ -8,10 +8,10 @@ about:
   links:
     - icon: linkedin
       href: https://www.linkedin.com/in/marina-kochuten-4786b6324/
-      target: _blank
+      #target: blank
     - icon: github
       href: https://github.com/marinakochuten
-      target: _blank
+      #target: blank
     - icon: envelope
       href: mailto:marinakochuten@bren.ucsb.edu
 

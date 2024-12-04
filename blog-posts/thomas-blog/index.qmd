@@ -1,5 +1,5 @@
 ---
-title: 'Visualizing the 2017 Thomas Fire: A Python Analysis'
+title: 'Visualizing the Thomas Fire: A Python Analysis'
 description: "Using AQI data and false color imagery to visualize the effects of the Thomas Fire on Santa Barbara county"
 author:
   - name: Marina Kochuten

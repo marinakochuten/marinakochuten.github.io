@@ -22,7 +22,7 @@ Using NASA's Landsat data and California Fire Perimeter data, I create a map tha
 |------------------------------------|------------------------------------|
 | <img src="fire-scar.png" width="450"/> | <img src="aqi.png" width="650"/> |
 
-#### **For the full analysis, see my [GitHub repository](https://github.com/marinakochuten/eds220-hwk4).**
+**For the full analysis, see my [GitHub repository](https://github.com/marinakochuten/eds220-hwk4).**
 
 ### Highlights
 

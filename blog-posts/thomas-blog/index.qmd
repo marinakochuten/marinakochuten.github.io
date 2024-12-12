@@ -8,10 +8,10 @@ author:
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
 date: last-modified
 image: thomas-fire.jpg
-jupyter: eds220-env
+#jupyter: eds220-env
 ---
-::: .darkbrown-text
 
+::: darkbrown-text
 ## About
 
 The Thomas Fire, which burned over 280,000 acres in Ventura and Santa Barbara counties in December 2017, was one of California's largest wildfires at the time. It caused widespread ecological damage, displaced communities, and left lasting environmental impacts.
@@ -33,17 +33,17 @@ Using NASA's Landsat data and California Fire Perimeter data, I create a map tha
 
 ### Data
 
-**Landsat:** I use a simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data, collected by the Landsat 8 satellite. The data was retrieved from the Microsoft Planetary Computer data catalogue and pre-processed to remove data outside land and coarsen the spatial resolution. This data is intended for visualization and educational purposes only. 
+**Landsat:** I use a simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data, collected by the Landsat 8 satellite. The data was retrieved from the Microsoft Planetary Computer data catalogue and pre-processed to remove data outside land and coarsen the spatial resolution. This data is intended for visualization and educational purposes only.
 
-- *Citation:* Microsoft Planetary Computer data catalogue (2024), *Landsat Collection 2 Level-2 (simplified)* \[Data set\] Available from: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. Access date: November 18, 2024.
+-   *Citation:* Microsoft Planetary Computer data catalogue (2024), *Landsat Collection 2 Level-2 (simplified)* \[Data set\] Available from: https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2. Access date: November 18, 2024.
 
-**Fire perimeters:** I use California Fire Perimeter data from the State of California's Data Catalog to subset to the Thomas Fire boundary. In this analysis, I will be using the file that I created from the full dataset. The dataset is updated annually and includes fire perimeters dating back to 1878. 
+**Fire perimeters:** I use California Fire Perimeter data from the State of California's Data Catalog to subset to the Thomas Fire boundary. In this analysis, I will be using the file that I created from the full dataset. The dataset is updated annually and includes fire perimeters dating back to 1878.
 
-- *Citation:* State of California Data Catalog (2024), California Fire Perimeters (all) \[Data set\] Available from: https://catalog.data.gov/dataset/california-fire-perimeters-all-b3436. Access date: November 18, 2024.
+-   *Citation:* State of California Data Catalog (2024), California Fire Perimeters (all) \[Data set\] Available from: https://catalog.data.gov/dataset/california-fire-perimeters-all-b3436. Access date: November 18, 2024.
 
-**Air Quality Index (AQI):** The EPA's AirData tool has pre-generated files of data available for download. The files are updated twice per year: once in June to capture the complete data for the prior year and once in December to capture the data for the summer. AQI is calculated each day for each monitor for the Criteria Gases and PM10 and PM2.5. For this analysis, I use two files, one containing daily AQI data for 2017 and one for 2018. 
+**Air Quality Index (AQI):** The EPA's AirData tool has pre-generated files of data available for download. The files are updated twice per year: once in June to capture the complete data for the prior year and once in December to capture the data for the summer. AQI is calculated each day for each monitor for the Criteria Gases and PM10 and PM2.5. For this analysis, I use two files, one containing daily AQI data for 2017 and one for 2018.
 
-- *Citation:* Environmental Protection Agency AirData (2024), Daily AQI by County \[Data Set\] Available from: https://www.epa.gov/outdoor-air-quality-data/download-daily-data. Access date: October 20, 2024.
+-   *Citation:* Environmental Protection Agency AirData (2024), Daily AQI by County \[Data Set\] Available from: https://www.epa.gov/outdoor-air-quality-data/download-daily-data. Access date: October 20, 2024.
 
 ## Mapping the fire
 
@@ -64,7 +64,7 @@ import rioxarray as rioxr
 # Libraries for plotting
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches                # For creating custom legend
-from matplotlib_scalebar.scalebar import ScaleBar    # For adding scalebar 
+#from matplotlib_scalebar.scalebar import ScaleBar    # For adding scalebar 
 
 # Import Landsat data
 landsat = rioxr.open_rasterio('data/landsat8-2018-01-26-sb-simplified.nc')
@@ -157,8 +157,8 @@ ax.text(x = 291870, y = 3831700,         # Position coordinates
 ax.set_title('2017 Thomas Fire (California) Burn Scar using False Color Imagery', fontsize = 16)
 
 # Add scale bar 
-scalebar = ScaleBar(1, units='m', location='lower left', length_fraction=0.25, color='black')  
-ax.add_artist(scalebar)
+#scalebar = ScaleBar(1, units='m', location='lower left', length_fraction=0.25, color='black')  
+#ax.add_artist(scalebar)
 
 # Display the plot
 plt.show()
@@ -259,5 +259,4 @@ plt.show()
 ## Conclusion
 
 For this analysis, I bring my newly aquired skills working with tabular and spatial data in Python together to visualize the impact of the 2017 Thomas Fire on Santa Barbara county. Using false color imagery, I highlight the burn scar. Then, I use daily AQI data to create a plot that accompanies the burn scar map.
-
 :::

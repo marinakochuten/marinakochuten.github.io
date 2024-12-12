@@ -24,7 +24,7 @@ format:
     theme: styles.scss
     mainfont: Montserrat
     toc: false
-    #page-layout: full
+    page-layout: full
 
 editor: visual
 

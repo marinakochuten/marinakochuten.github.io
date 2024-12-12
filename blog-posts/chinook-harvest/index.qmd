@@ -20,6 +20,12 @@ editor_options:
   chunk_output_type: console
 warning: false 
 messages: false
+format:
+  html:
+    theme: styles.scss
+    mainfont: Montserrat
+    toc: false
+    page-layout: article
 ---
 ::: darkbrown-text
 In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)^[In this section, when possible, I will be using the traditional Aleut language, Unangam Tunuu. All words are translated in the [Aleutian Pribilof Islands Associaton's Traditional Foods Glossary](https://www.apiai.org/community-services/traditional-foods-program/glossary-vocabulary/)] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
@@ -115,6 +121,7 @@ First, I take a look at the distribution of species harvest between the two sect
 
 ```{r}
 #| code-fold: true
+#| fig-cap: "This plot shows the distribution of total harvest for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016"
 
 ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = species)) +
   geom_boxplot() +
@@ -131,6 +138,7 @@ Since the difference in magnitude of Chinook harvest compared to all other speci
 
 ```{r}
 #| code-fold: true
+#| fig-cap: "This plot shows the distribution of total harvest (log transformed) for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016"
 
 ggplot(chinook_harvest, aes(x = sector, y = log(harvest), fill = species)) +
   geom_boxplot() +
@@ -146,6 +154,8 @@ I am also interested to see the proportion of Chinook of the total harvest betwe
 
 ```{r}
 #| code-fold: true
+#| fig-cap: "This plot shows the proportion of Chinook salmon of the total salmon harvest from 1985-2016 in the subsistence and commercial fishing sectors"
+
 ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = factor(species))) +
   geom_col() +
   facet_wrap(~sector, scale = "free") +
@@ -208,6 +218,8 @@ pe
 Use randomization to simulate the distribution of the sample statistic under the null hypothesis.
 
 ```{r}
+#| fig-cap: "This plot shows the simulated distribution of the difference in proportions under the null hypothesis. The pink line shows the true difference in proportions of the sample."
+
 # For reproducability
 set.seed(2222)
 

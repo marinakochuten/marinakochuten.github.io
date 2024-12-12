@@ -28,15 +28,21 @@ format:
     page-layout: article
 ---
 
+
+
 ::: darkbrown-text
 In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)^[In this section, when possible, I will be using the traditional Aleut language, Unangam Tunuu. All words are translated in the [Aleutian Pribilof Islands Associaton's Traditional Foods Glossary](https://www.apiai.org/community-services/traditional-foods-program/glossary-vocabulary/)] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
 
 :::: column-margin
+
+
 ```{r}
 #| echo: false
 #| fig-alt: "Three jars filled with salmon"
 knitr::include_graphics("canned-salmon.png")
 ```
+
+
 
 ::: figure-caption
 Jars of salmon were a regular find in my care packages. 
@@ -54,11 +60,15 @@ In this analysis for my final project for EDS 222 - Statistics for Environmental
 
 ## Background
 
+
+
 ```{r}
 #| echo: false
 #| fig-alt: "The oceans with islans in the distance. It is a beautiful sunny day."
 knitr::include_graphics("aleutians.png")
 ```
+
+
 ::: figure-caption
 Scenery in the Aleutians.
 Photo credits: Aleutian Island Waterfowlers
@@ -97,6 +107,8 @@ To explore this hypothesis, I use a randomization test to explore the question:
 
 ### Setup
 
+
+
 ```{r}
 # Load libraries
 library(tidyverse)
@@ -106,9 +118,13 @@ library(kableExtra)
 harvest <- read_csv("Harvest_All_Sectors.csv")
 ```
 
+
+
 ### Data cleaning
 
 The data includes harvest counts for all Alaska regions. For this analysis, I am only interested in the Alaska Peninsula and Aleutian Islands:
+
+
 
 ```{r}
 # Filter harvest data to the Alaska Peninsula and Aleutian Islands
@@ -116,7 +132,11 @@ apai_harvest <- harvest |>
   filter(SASAP.Region == "Alaska Peninsula and Aleutian Islands")
 ```
 
+
+
 Next, I want to categorize sector into two groups: subsistence and commercial. On the ground, personal use and subsistence catches are nearly identical in harvest methods and use. The personal use sector was created in response to the enactment of the state's subsistence priority law, which precluded some individuals from participating in customary and traditional subsistence fisheries because the stocks they fish are not classified as customary and traditional use stocks ^[Jeanette Clark, & Alaska Department Fish Game, Division Commercial Fisheries Alaska Department Fish Game, Division Sport Fish Alaska Department Fish Game, Division of and of of and of of and of Subsistence. (2019). Harvest of Salmon across Commercial, Subsistence, Personal Use, and Sport Fish sectors, Alaska, 1995-2016. Knowledge Network for Biocomplexity. doi:10.5063/F1HM56Q3.]. Because of this, I will group personal use into the subsistence category.
+
+
 
 ```{r}
 # Replace all "Personal Use" with "Subsistence"
@@ -126,9 +146,13 @@ apai_harvest$sector <- str_replace_all(apai_harvest$sector, "Personal Use", "Sub
 unique(apai_harvest$sector)
 ```
 
+
+
 I want to compare Chinook salmon to all other species. By grouping all other salmon species into one group, I will be able to calculate total harvest for Chinook and other species by sector and year.
 
 From 1975-1984, there is only data for commercial harvest. I want to only include years that have data for both the commercial and subsistence sectors, so I will filter the data to 1985-2016. Lastly, I will finish my data cleaning by filtering down to the two sectors of interest, Subsistence and Commercial.
+
+
 
 ```{r}
 # Subset data to harvest of Chinook salmon and other salmon species in the 2 sectors from 1985-2016
@@ -140,9 +164,13 @@ chinook_harvest <- apai_harvest |>
   summarize(harvest = sum(harvest, na.rm = TRUE), .groups = "drop")
 ```
 
+
+
 ### Visualize the relationship
 
 First, I take a look at the distribution of species harvest between the two sectors:
+
+
 
 ```{r}
 #| code-fold: true
@@ -160,7 +188,11 @@ ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = species)) +
 
 ```
 
+
+
 Since the difference in magnitude of Chinook harvest compared to all other species is so large, it makes comparing the distributions difficult to interpret. To normalize the differences for the sake of visualization, I log transform harvest:
+
+
 
 ```{r}
 #| code-fold: true
@@ -177,7 +209,11 @@ ggplot(chinook_harvest, aes(x = sector, y = log(harvest), fill = species)) +
   theme_bw()
 ```
 
+
+
 I am also interested to see the proportion of Chinook of the total harvest between sectors:
+
+
 
 ```{r}
 #| code-fold: true
@@ -193,6 +229,8 @@ ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = factor(species))) +
         title = "Total Chinook Harvest by Sector") +
   theme_minimal()
 ```
+
+
 
 The proportion of Chinook salmon harvested is a very small fraction of the whole. This makes sense, as Chinook abundance is relatively low compared to overall salmon abundance in the North Pacific ^[Brendan Connors, Gregory T Ruggerone, James R Irvine, Adapting management of Pacific salmon to a warming and more crowded ocean, ICES Journal of Marine Science, 2024;, fsae135, https://doi.org/10.1093/icesjms/fsae135]. This makes the differences between sectors challenging to visually interpret. However, it seems that there is a higher proportion of Chinook harvested in the subsistence sector. **It is important to notice the difference in the y-axes across all of these plots.**
 
@@ -210,6 +248,8 @@ I choose a randomization test for this analysis because it is a simple and strai
 **Step 2:** Calculate the point statistic:
 
 The relevant sample statistic for my hypothesis is a difference in proportions between Chinook total harvest / other total harvest in the commercial and subsistence sectors.
+
+
 
 ```{r}
 # Find chinook proportion of total harvest in each sector
@@ -239,11 +279,15 @@ pe
 ```
 
 
+
+
 **The difference in Chinook salmon harvested as a percentage of the overall harvest between subsistence and commercial sectors is 1.28%.**
 
 **Step 3:** Quantify the uncertainty
 
 Use randomization to simulate the distribution of the sample statistic under the null hypothesis.
+
+
 
 ```{r}
 #| fig-cap: "This plot shows the simulated distribution of the difference in proportions under the null hypothesis. The pink line shows the true difference in proportions of the sample."
@@ -277,15 +321,21 @@ ggplot(tibble(null_dist), aes(null_dist)) +
   theme_bw()
 ```
 
+
+
 Under the null hypothesis, the sample statistic is normally distributed and centered around 0. The true point statistic from the data is out to the right.
 
 **Step 4:** Calculate probability of the point estimate under the null
+
+
 
 ```{r}
 # Calculate the p-value
 pval <- sum((null_dist) > (pe)) / length(null_dist)
 print(pval)
 ```
+
+
 
 The p-value 0 is less than the threshold, 0.05. So, I am able to reject the null hypothesis and say that there is a 0% chance that the relationship is due to random chance. I find that the proportion of Chinook salmon harvested is in fact greater in the subsistence sector than the commercial sector.
 
@@ -309,11 +359,15 @@ I switch between talking about Unangan people and the broader Aleutian fishing c
 **Thank you!**
 :::
 
+
+
 ```{r}
 #| echo: false
 #| fig-alt: "Illustration of adult sockeye salmon swimming underwater"
 knitr::include_graphics("sockeye-illustration.png")
 ```
+
+
 ::: figure-caption
 Image credits: Eric Jablonowski
 :::

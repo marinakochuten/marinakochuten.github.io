@@ -12,12 +12,15 @@ $dark_green: #656D4A;
 $dark_brown: #674636;
 $cream: #FFF8E8;
 $yellow: #F3CA52;
+$light-yellow: #FCEEC5;
+$dark-yellow: #D5A30B;
 $light_coral: #DF928E;
 $rose: #CB8589;
 $lav: #AD7A99;
 $sienna: #0E0906;
 $tea: #FFF3D6;
 $dark-cream: #F1EAE4;
+$light-green: #E8E3C5;
 
 // Quarto Sass Variables
 $body-bg: $cream; // body background
@@ -26,14 +29,14 @@ $navbar-fg: $cream;  // navbar text
 $navbar-hl: $yellow;  // text color for page you are on
 $footer-bg: $cream;  // footer background
 $footer-fg: $dark_brown;  // footer text
-$link-color: $rose;   // hyperlink color
+$link-color: $dark-yellow;   // hyperlink color
 
 // Inline code
-$code-bg: $dark_green;
-$code-color: $cream;
+$code-bg: $light-yellow;
+$code-color: $dark_brown;
 
 // Code blocks
-$code-block-bg: $dark-cream;
+$code-block-bg: $light-green;
 
 
 /*-- scss:rules --*/

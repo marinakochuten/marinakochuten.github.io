@@ -12,8 +12,8 @@ categories: [Quarto, MEDS]
 #bibliography: references.bib
 #csl: plos-computational-biology.csl
 image: salmon-rack.jpg
-#citation:
- # url: https://marinakochuten.github.io/blog-posts/2024-10-18-my-first-post/
+citation:
+  url: https://marinakochuten.github.io/blog-posts/chinook-harvest/
 draft: true
 draft-mode: visible
 editor_options: 
@@ -29,7 +29,7 @@ For me, fall is the highly anticipated "Care Package Season". When there is enou
 
 Because of my Aleutian ties, I am innately curious about human-salmon systems. [Sam Cisk](https://samanthacsik.github.io), data science educator (and mentor for building this website), pointed me towards the State of Alaska People and Salmon Project (SASAP). The project included an NCEAS working group data team, and they published open-source, up-to-date datasets regarding people and salmon throughout Alaska. I think that this project was wildly cool, and work like this is what keeps me inpired while pursuing an environmental data science career! 
 
-In this analysis for my final project for EDS 222 - Statistics for Environmental Data Science, I use a SASAP dataset to explore the relationship between fishing sector and harvest of the beloved Chinook salmon. Read on to learn more about my analysis. 
+In this analysis for my final project for EDS 222 - Statistics for Environmental Data Science, I use a SASAP dataset to explore the relationship between fishing sector and harvest of the beloved Chinook salmon. Read on to learn more about my analysis, or see my [GitHub repository](https://github.com/marinakochuten/chinook-sustenance-harvest)!
 
 
 ## Background

@@ -27,9 +27,23 @@ format:
     toc: false
     page-layout: article
 ---
+
 ::: darkbrown-text
 In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)^[In this section, when possible, I will be using the traditional Aleut language, Unangam Tunuu. All words are translated in the [Aleutian Pribilof Islands Associaton's Traditional Foods Glossary](https://www.apiai.org/community-services/traditional-foods-program/glossary-vocabulary/)] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
 
+:::: column-margin
+```{r}
+#| echo: false
+#| fig-alt: "Three jars filled with salmon"
+knitr::include_graphics("canned-salmon.png")
+```
+
+::: figure-caption
+Jars of salmon were a regular find in my care packages. 
+
+Photo credits: Danielle Ringer
+:::
+::::
 
 For me, fall is the highly anticipated "Care Package Season". When there is enough, my family always shares *(udigdada)* the bounty. Down in the mainland, annual care packages filled with Alaska's summer harvests keep me connected to my Aleutian family and culture. Salmonberry *(alagnax̂)* and mossberry *(qaayux̂)* jelly, pickled putchkis *(saaqudax̂)*, dried salmon and halibut *(udax̂)*, smoked salmon *(qam dimiĝii)*, and if I'm lucky caribou *(itx̂ayax̂)* are tastes of home in the Aleutians delivered to me in the Pacific Northwest. We turn these ingredients into traditional dishes like fish pie  *(piruugax̂)* and stewed caribou and gravy over rice *(Aluutagaaq)*, and we make fry bread *(alaadikax̂)* to go along with them. While Salmon is abundant in these gifts, the prized Chinook *(chaguchax̂)* rarely makes its way to us down south. 
 
@@ -39,6 +53,16 @@ In this analysis for my final project for EDS 222 - Statistics for Environmental
 
 
 ## Background
+
+```{r}
+#| echo: false
+#| fig-alt: "The oceans with islans in the distance. It is a beautiful sunny day."
+knitr::include_graphics("aleutians.png")
+```
+::: figure-caption
+Scenery in the Aleutians.
+Photo credits: Aleutian Island Waterfowlers
+:::
 
 Salmon are crucial to the health and cultural wellbeing of Aleut/Unangan communities along the eastern Aleutians and Alaskan Peninsula. Of the 5 Pacific salmon species, Chinook salmon hold particular cultural significance. They are also the largest, and fetch one of the highest values per pound on the commercial market ^[Alaska Department of Fish and Game. (2023). 2023 preliminary Alaska Commercial Harvest and Exvessel Values. https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/2023_preliminary_salmon_summary_table.pdf].
 
@@ -107,6 +131,7 @@ I want to compare Chinook salmon to all other species. By grouping all other sal
 From 1975-1984, there is only data for commercial harvest. I want to only include years that have data for both the commercial and subsistence sectors, so I will filter the data to 1985-2016. Lastly, I will finish my data cleaning by filtering down to the two sectors of interest, Subsistence and Commercial.
 
 ```{r}
+# Subset data to harvest of Chinook salmon and other salmon species in the 2 sectors from 1985-2016
 chinook_harvest <- apai_harvest |>
   mutate(species = ifelse(species == "chinook", "chinook", "other")) |>
   filter((sector == "Commercial") | (sector == "Subsistence")) |>
@@ -123,6 +148,7 @@ First, I take a look at the distribution of species harvest between the two sect
 #| code-fold: true
 #| fig-cap: "This plot shows the distribution of total harvest for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016"
 
+# Make boxplot of harvest distributions by species and sector
 ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = species)) +
   geom_boxplot() +
   facet_wrap(~sector, scale = "free") +
@@ -140,6 +166,7 @@ Since the difference in magnitude of Chinook harvest compared to all other speci
 #| code-fold: true
 #| fig-cap: "This plot shows the distribution of total harvest (log transformed) for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016"
 
+# Remake the same boxplot but log transform harvest for ease of visualization
 ggplot(chinook_harvest, aes(x = sector, y = log(harvest), fill = species)) +
   geom_boxplot() +
   facet_wrap(~sector, scale = "free") +
@@ -156,6 +183,7 @@ I am also interested to see the proportion of Chinook of the total harvest betwe
 #| code-fold: true
 #| fig-cap: "This plot shows the proportion of Chinook salmon of the total salmon harvest from 1985-2016 in the subsistence and commercial fishing sectors"
 
+# Make bar plot showing proportion of Chinook harvested
 ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = factor(species))) +
   geom_col() +
   facet_wrap(~sector, scale = "free") +
@@ -276,4 +304,18 @@ That said, my results have piqued my interest. What is this suggesting about the
 **Note:**
 
 I switch between talking about Unangan people and the broader Aleutian fishing communities throughout this analysis. Both Indigenous and non-Indigenous residents of the Aleutian Islands and Alaskan Peninsula participate in commercial and subsistence fishing activities, with Indigenous fishers only making up a small portion of the population. Drawing on my personal experience in these tight-knit communities, cultural practices regarding salmon carry across Indigenous and non-Indigenous members alike. Because of this, I take liberties applying "cultural significance" to all community members in the region. 
+
+::: center-text
+**Thank you!**
+:::
+
+```{r}
+#| echo: false
+#| fig-alt: "Illustration of adult sockeye salmon swimming underwater"
+knitr::include_graphics("sockeye-illustration.png")
+```
+::: figure-caption
+Image credits: Eric Jablonowski
+:::
+
 :::

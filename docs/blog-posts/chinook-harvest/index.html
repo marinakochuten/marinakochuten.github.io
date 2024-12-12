@@ -111,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
@@ -192,21 +192,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
 
-<div class="darkbrown-text">
+<div class="darkbrown-text page-columns page-full">
 <p>In the Aleutians, summer is the highly anticipated “Sockeye (aanux̂)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Season”. For many of the Indigenous <em>(Unangan)</em> residents, fishing is not only a way to make a living - it is <em>the</em> way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.</p>
-<p>For me, fall is the highly anticipated “Care Package Season”. When there is enough, my family always shares <em>(udigdada)</em> the bounty. Down in the mainland, annual care packages filled with Alaska’s summer harvests keep me connected to my Aleutian family and culture. Salmonberry <em>(alagnax̂)</em> and mossberry <em>(qaayux̂)</em> jelly, pickled putchkis <em>(saaqudax̂)</em>, dried salmon and halibut <em>(udax̂)</em>, smoked salmon <em>(qam dimiĝii)</em>, and if I’m lucky caribou <em>(itx̂ayax̂)</em> are tastes of home in the Aleutians delivered to me in the Pacific Northwest. We turn these ingredients into traditional dishes like fish pie <em>(piruugax̂)</em> and stewed caribou and gravy over rice <em>(Aluutagaaq)</em>, and we make fry bread <em>(alaadikax̂)</em> to go along with them. While Salmon is abundant in these gifts, the prized Chinook <em>(chaguchax̂)</em> rarely makes its way to us down south.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="canned-salmon.png" class="img-fluid figure-img" alt="Three jars filled with salmon" width="1292"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="figure-caption">
+<p>Jars of salmon were a regular find in my care packages.</p>
+<p>Photo credits: Danielle Ringer</p>
+</div>
+</div></div><p>For me, fall is the highly anticipated “Care Package Season”. When there is enough, my family always shares <em>(udigdada)</em> the bounty. Down in the mainland, annual care packages filled with Alaska’s summer harvests keep me connected to my Aleutian family and culture. Salmonberry <em>(alagnax̂)</em> and mossberry <em>(qaayux̂)</em> jelly, pickled putchkis <em>(saaqudax̂)</em>, dried salmon and halibut <em>(udax̂)</em>, smoked salmon <em>(qam dimiĝii)</em>, and if I’m lucky caribou <em>(itx̂ayax̂)</em> are tastes of home in the Aleutians delivered to me in the Pacific Northwest. We turn these ingredients into traditional dishes like fish pie <em>(piruugax̂)</em> and stewed caribou and gravy over rice <em>(Aluutagaaq)</em>, and we make fry bread <em>(alaadikax̂)</em> to go along with them. While Salmon is abundant in these gifts, the prized Chinook <em>(chaguchax̂)</em> rarely makes its way to us down south.</p>
 <p>Because of my Aleutian ties, I am innately curious about human-salmon systems. <a href="https://samanthacsik.github.io">Sam Cisk</a>, data science educator (and mentor for building this website), pointed me towards the State of Alaska People and Salmon Project (SASAP). The project included an NCEAS working group data team, and they published open-source, up-to-date datasets regarding people and salmon throughout Alaska. I think that this project was wildly cool, and work like this is what keeps me inpired while pursuing an environmental data science career!</p>
 <p>In this analysis for my final project for EDS 222 - Statistics for Environmental Data Science, I use a SASAP dataset to explore the relationship between fishing sector and harvest of the beloved Chinook salmon. Read on to learn more about my analysis, or see my <a href="https://github.com/marinakochuten/chinook-sustenance-harvest">GitHub repository</a>!</p>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="aleutians.png" class="img-fluid figure-img" alt="The oceans with islans in the distance. It is a beautiful sunny day." width="4642"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="figure-caption">
+<p>Scenery in the Aleutians. Photo credits: Aleutian Island Waterfowlers</p>
+</div>
 <p>Salmon are crucial to the health and cultural wellbeing of Aleut/Unangan communities along the eastern Aleutians and Alaskan Peninsula. Of the 5 Pacific salmon species, Chinook salmon hold particular cultural significance. They are also the largest, and fetch one of the highest values per pound on the commercial market <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 <p>For Aleutian communities, there is very little separation between commercial and subsistence fishing activities. Often, subsistence fish are retained to fill freezers as “homepack” from commercial harvests <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. This makes understanding participation in these fishing sectors very complex.</p>
 <p><a href="https://alaskasalmonandpeople.org">The State of Alaska Salmon and People Project (SASAP)</a> is a collaboration of Indigenous and non-Indigenous researchers, scholars and community leaders working to produce and share integrated, accurate, and up-to-date information on Alaska’s salmon and people systems. They compiled 125 data sets into an <a href="https://knb.ecoinformatics.org/portals/SASAP/Data">open-source data portal</a> that makes relevant salmon information accessible and usable by Alaskans wishing to advocate on their own behalf for a better salmon future. In recognition of the complex relationship between commercial and subsistence harvests, they uniquely derive estimated subsistence harvest from a combination of subsistence permit returns and post-season household survey data.</p>
@@ -267,12 +295,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I want to compare Chinook salmon to all other species. By grouping all other salmon species into one group, I will be able to calculate total harvest for Chinook and other species by sector and year.</p>
 <p>From 1975-1984, there is only data for commercial harvest. I want to only include years that have data for both the commercial and subsistence sectors, so I will filter the data to 1985-2016. Lastly, I will finish my data cleaning by filtering down to the two sectors of interest, Subsistence and Commercial.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>chinook_harvest <span class="ot">&lt;-</span> apai_harvest <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">ifelse</span>(species <span class="sc">==</span> <span class="st">"chinook"</span>, <span class="st">"chinook"</span>, <span class="st">"other"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>((sector <span class="sc">==</span> <span class="st">"Commercial"</span>) <span class="sc">|</span> (sector <span class="sc">==</span> <span class="st">"Subsistence"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1985</span> <span class="sc">&amp;</span> year <span class="sc">&lt;=</span> <span class="dv">2016</span>) <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year, sector, species) <span class="sc">|&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">harvest =</span> <span class="fu">sum</span>(harvest, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset data to harvest of Chinook salmon and other salmon species in the 2 sectors from 1985-2016</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>chinook_harvest <span class="ot">&lt;-</span> apai_harvest <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">ifelse</span>(species <span class="sc">==</span> <span class="st">"chinook"</span>, <span class="st">"chinook"</span>, <span class="st">"other"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>((sector <span class="sc">==</span> <span class="st">"Commercial"</span>) <span class="sc">|</span> (sector <span class="sc">==</span> <span class="st">"Subsistence"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1985</span> <span class="sc">&amp;</span> year <span class="sc">&lt;=</span> <span class="dv">2016</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(year, sector, species) <span class="sc">|&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">harvest =</span> <span class="fu">sum</span>(harvest, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="visualize-the-relationship" class="level3">
@@ -281,19 +310,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> harvest, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of individuals harvested"</span>,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fishing Sector"</span>,</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Distribution of species harvested by sector"</span>) <span class="sc">+</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make boxplot of harvest distributions by species and sector</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> harvest, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of individuals harvested"</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fishing Sector"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Distribution of species harvested by sector"</span>) <span class="sc">+</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>This plot shows the distribution of total harvest for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016</figcaption>
 </figure>
 </div>
@@ -303,19 +333,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> <span class="fu">log</span>(harvest), <span class="at">fill =</span> species)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Log number of individuals harvested"</span>,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fishing Sector"</span>,</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Distribution of species harvested by sector - Log transformed"</span>) <span class="sc">+</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remake the same boxplot but log transform harvest for ease of visualization</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> <span class="fu">log</span>(harvest), <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Log number of individuals harvested"</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Fishing Sector"</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Distribution of species harvested by sector - Log transformed"</span>) <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>This plot shows the distribution of total harvest (log transformed) for Chinook and other salmon species between the subsistence and commercial fishing sectors from 1985-2016</figcaption>
 </figure>
 </div>
@@ -325,19 +356,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> harvest, <span class="at">fill =</span> <span class="fu">factor</span>(species))) <span class="sc">+</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( <span class="at">x =</span> <span class="st">"Fishing Sector"</span>, </span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Number of individuals harvested"</span>,  </span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Total Chinook Harvest by Sector"</span>) <span class="sc">+</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make bar plot showing proportion of Chinook harvested</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(chinook_harvest, <span class="fu">aes</span>(<span class="at">x =</span> sector, <span class="at">y =</span> harvest, <span class="at">fill =</span> <span class="fu">factor</span>(species))) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>sector, <span class="at">scale =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="st">"Species"</span>, <span class="at">palette =</span> <span class="st">"Pastel1"</span>) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( <span class="at">x =</span> <span class="st">"Fishing Sector"</span>, </span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">y =</span> <span class="st">"Number of individuals harvested"</span>,  </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">title =</span> <span class="st">"Total Chinook Harvest by Sector"</span>) <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>This plot shows the proportion of Chinook salmon of the total salmon harvest from 1985-2016 in the subsistence and commercial fishing sectors</figcaption>
 </figure>
 </div>
@@ -441,7 +473,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>This plot shows the simulated distribution of the difference in proportions under the null hypothesis. The pink line shows the true difference in proportions of the sample.</figcaption>
 </figure>
 </div>
@@ -471,6 +503,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>That said, my results have piqued my interest. What is this suggesting about the way Aleutian communities prioritize cultural significance and monetary incentive? Are we seeing the results of fisherman preferences or fishery sector escapement counts and bag limits? Would I see the same results if I had considered the proportion of Chinook harvested in these fishing sectors over time? What if I added other parts of the system, such as declining Chinook abundance, or Chinook escapement counts from subsistence fisheries? The questions are endless, and the data that SASAP provided is quite comprehensive. Further investigation using these datasets could yield some extremely interesting results, with potentially high value for Unangan people and Aleutian fishing communities.</p>
 <p><strong>Note:</strong></p>
 <p>I switch between talking about Unangan people and the broader Aleutian fishing communities throughout this analysis. Both Indigenous and non-Indigenous residents of the Aleutian Islands and Alaskan Peninsula participate in commercial and subsistence fishing activities, with Indigenous fishers only making up a small portion of the population. Drawing on my personal experience in these tight-knit communities, cultural practices regarding salmon carry across Indigenous and non-Indigenous members alike. Because of this, I take liberties applying “cultural significance” to all community members in the region.</p>
+<div class="center-text">
+<p><strong>Thank you!</strong></p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="sockeye-illustration.png" class="img-fluid figure-img" alt="Illustration of adult sockeye salmon swimming underwater" width="3300"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="figure-caption">
+<p>Image credits: Eric Jablonowski</p>
+</div>
 </section>
 </div>
 

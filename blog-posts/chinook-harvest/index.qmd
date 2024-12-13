@@ -8,7 +8,7 @@ author:
     affiliation: MEDS
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
 categories: [Quarto, MEDS]
-#toc: true
+toc: true
 #bibliography: references.bib
 #csl: plos-computational-biology.csl
 image: salmon-rack.jpg
@@ -24,12 +24,11 @@ format:
   html:
     theme: styles.scss
     mainfont: Montserrat
-    toc: false
     page-layout: article
 ---
 
-::: darkbrown-text
-In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)^[In this section, when possible, I will be using the traditional Aleut language, Unangam Tunuu. All words are translated in the [Aleutian Pribilof Islands Associaton's Traditional Foods Glossary](https://www.apiai.org/community-services/traditional-foods-program/glossary-vocabulary/)] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
+:::::::: darkbrown-text
+In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)[^1] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
 
 :::: column-margin
 ```{r}
@@ -39,18 +38,17 @@ knitr::include_graphics("canned-salmon.png")
 ```
 
 ::: figure-caption
-Jars of salmon were a regular find in my care packages. 
+Jars of salmon were a regular find in my care packages.
 
 Photo credits: Danielle Ringer
 :::
 ::::
 
-For me, fall is the highly anticipated "Care Package Season". When there is enough, my family always shares *(udigdada)* the bounty. Down in the mainland, annual care packages filled with Alaska's summer harvests keep me connected to my Aleutian family and culture. Salmonberry *(alagnax̂)* and mossberry *(qaayux̂)* jelly, pickled putchkis *(saaqudax̂)*, dried salmon and halibut *(udax̂)*, smoked salmon *(qam dimiĝii)*, and if I'm lucky caribou *(itx̂ayax̂)* are tastes of home in the Aleutians delivered to me in the Pacific Northwest. We turn these ingredients into traditional dishes like fish pie  *(piruugax̂)* and stewed caribou and gravy over rice *(Aluutagaaq)*, and we make fry bread *(alaadikax̂)* to go along with them. While Salmon is abundant in these gifts, the prized Chinook *(chaguchax̂)* rarely makes its way to us down south. 
+For me, fall is the highly anticipated "Care Package Season". When there is enough, my family always shares *(udigdada)* the bounty. Down in the mainland, annual care packages filled with Alaska's summer harvests keep me connected to my Aleutian family and culture. Salmonberry *(alagnax̂)* and mossberry *(qaayux̂)* jelly, pickled putchkis *(saaqudax̂)*, dried salmon and halibut *(udax̂)*, smoked salmon *(qam dimiĝii)*, and if I'm lucky caribou *(itx̂ayax̂)* are tastes of home in the Aleutians delivered to me in the Pacific Northwest. We turn these ingredients into traditional dishes like fish pie *(piruugax̂)* and stewed caribou and gravy over rice *(Aluutagaaq)*, and we make fry bread *(alaadikax̂)* to go along with them. While Salmon is abundant in these gifts, the prized Chinook *(chaguchax̂)* rarely makes its way to us down south.
 
-Because of my Aleutian ties, I am innately curious about human-salmon systems. [Sam Cisk](https://samanthacsik.github.io), data science educator (and mentor for building this website), pointed me towards the State of Alaska People and Salmon Project (SASAP). The project included an NCEAS working group data team, and they published open-source, up-to-date datasets regarding people and salmon throughout Alaska. I think that this project was wildly cool, and work like this is what keeps me inpired while pursuing an environmental data science career! 
+Because of my Aleutian ties, I am innately curious about human-salmon systems. [Sam Cisk](https://samanthacsik.github.io), data science educator (and mentor for building this website), pointed me towards the State of Alaska People and Salmon Project (SASAP). The project included an NCEAS working group data team, and they published open-source, up-to-date datasets regarding people and salmon throughout Alaska. I think that this project was wildly cool, and work like this is what keeps me inpired while pursuing an environmental data science career!
 
 In this analysis for my final project for EDS 222 - Statistics for Environmental Data Science, I use a SASAP dataset to explore the relationship between fishing sector and harvest of the beloved Chinook salmon. Read on to learn more about my analysis, or see my [GitHub repository](https://github.com/marinakochuten/chinook-sustenance-harvest)!
-
 
 ## Background
 
@@ -59,14 +57,14 @@ In this analysis for my final project for EDS 222 - Statistics for Environmental
 #| fig-alt: "The oceans with islans in the distance. It is a beautiful sunny day."
 knitr::include_graphics("aleutians.png")
 ```
+
 ::: figure-caption
-Scenery in the Aleutians.
-Photo credits: Aleutian Island Waterfowlers
+Scenery in the Aleutians. Photo credits: Aleutian Island Waterfowlers
 :::
 
-Salmon are crucial to the health and cultural wellbeing of Aleut/Unangan communities along the eastern Aleutians and Alaskan Peninsula. Of the 5 Pacific salmon species, Chinook salmon hold particular cultural significance. They are also the largest, and fetch one of the highest values per pound on the commercial market ^[Alaska Department of Fish and Game. (2023). 2023 preliminary Alaska Commercial Harvest and Exvessel Values. https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/2023_preliminary_salmon_summary_table.pdf].
+Salmon are crucial to the health and cultural wellbeing of Aleut/Unangan communities along the eastern Aleutians and Alaskan Peninsula. Of the 5 Pacific salmon species, Chinook salmon hold particular cultural significance. They are also the largest, and fetch one of the highest values per pound on the commercial market [^2].
 
-For Aleutian communities, there is very little separation between commercial and subsistence fishing activities. Often, subsistence fish are retained to fill freezers as “homepack” from commercial harvests ^[SASAP. (n.d.). *Alaska Peninsula/Aleutian Islands* Alaska Peninsula/Aleutian Islands : SASAP : State of Alaska Salmon and People. https://alaskasalmonandpeople.org/region/alaska-peninsula-aleutian-islands/]. This makes understanding participation in these fishing sectors very complex.
+For Aleutian communities, there is very little separation between commercial and subsistence fishing activities. Often, subsistence fish are retained to fill freezers as “homepack” from commercial harvests [^3]. This makes understanding participation in these fishing sectors very complex.
 
 [The State of Alaska Salmon and People Project (SASAP)](https://alaskasalmonandpeople.org) is a collaboration of Indigenous and non-Indigenous researchers, scholars and community leaders working to produce and share integrated, accurate, and up-to-date information on Alaska’s salmon and people systems. They compiled 125 data sets into an [open-source data portal](https://knb.ecoinformatics.org/portals/SASAP/Data) that makes relevant salmon information accessible and usable by Alaskans wishing to advocate on their own behalf for a better salmon future. In recognition of the complex relationship between commercial and subsistence harvests, they uniquely derive estimated subsistence harvest from a combination of subsistence permit returns and post-season household survey data.
 
@@ -116,7 +114,7 @@ apai_harvest <- harvest |>
   filter(SASAP.Region == "Alaska Peninsula and Aleutian Islands")
 ```
 
-Next, I want to categorize sector into two groups: subsistence and commercial. On the ground, personal use and subsistence catches are nearly identical in harvest methods and use. The personal use sector was created in response to the enactment of the state's subsistence priority law, which precluded some individuals from participating in customary and traditional subsistence fisheries because the stocks they fish are not classified as customary and traditional use stocks ^[Jeanette Clark, & Alaska Department Fish Game, Division Commercial Fisheries Alaska Department Fish Game, Division Sport Fish Alaska Department Fish Game, Division of and of of and of of and of Subsistence. (2019). Harvest of Salmon across Commercial, Subsistence, Personal Use, and Sport Fish sectors, Alaska, 1995-2016. Knowledge Network for Biocomplexity. doi:10.5063/F1HM56Q3.]. Because of this, I will group personal use into the subsistence category.
+Next, I want to categorize sector into two groups: subsistence and commercial. On the ground, personal use and subsistence catches are nearly identical in harvest methods and use. The personal use sector was created in response to the enactment of the state's subsistence priority law, which precluded some individuals from participating in customary and traditional subsistence fisheries because the stocks they fish are not classified as customary and traditional use stocks [^4]. Because of this, I will group personal use into the subsistence category.
 
 ```{r}
 # Replace all "Personal Use" with "Subsistence"
@@ -194,9 +192,7 @@ ggplot(chinook_harvest, aes(x = sector, y = harvest, fill = factor(species))) +
   theme_minimal()
 ```
 
-The proportion of Chinook salmon harvested is a very small fraction of the whole. This makes sense, as Chinook abundance is relatively low compared to overall salmon abundance in the North Pacific ^[Brendan Connors, Gregory T Ruggerone, James R Irvine, Adapting management of Pacific salmon to a warming and more crowded ocean, ICES Journal of Marine Science, 2024;, fsae135, https://doi.org/10.1093/icesjms/fsae135]. This makes the differences between sectors challenging to visually interpret. However, it seems that there is a higher proportion of Chinook harvested in the subsistence sector. **It is important to notice the difference in the y-axes across all of these plots.**
-
-
+The proportion of Chinook salmon harvested is a very small fraction of the whole. This makes sense, as Chinook abundance is relatively low compared to overall salmon abundance in the North Pacific [^5]. This makes the differences between sectors challenging to visually interpret. However, it seems that there is a higher proportion of Chinook harvested in the subsistence sector. **It is important to notice the difference in the y-axes across all of these plots.**
 
 ### Hypothesis testing by randomization
 
@@ -237,7 +233,6 @@ chinook_prop |>
 pe <- chinook_prop$proportion[2] - chinook_prop$proportion[1]
 pe
 ```
-
 
 **The difference in Chinook salmon harvested as a percentage of the overall harvest between subsistence and commercial sectors is 1.28%.**
 
@@ -303,7 +298,7 @@ That said, my results have piqued my interest. What is this suggesting about the
 
 **Note:**
 
-I switch between talking about Unangan people and the broader Aleutian fishing communities throughout this analysis. Both Indigenous and non-Indigenous residents of the Aleutian Islands and Alaskan Peninsula participate in commercial and subsistence fishing activities, with Indigenous fishers only making up a small portion of the population. Drawing on my personal experience in these tight-knit communities, cultural practices regarding salmon carry across Indigenous and non-Indigenous members alike. Because of this, I take liberties applying "cultural significance" to all community members in the region. 
+I switch between talking about Unangan people and the broader Aleutian fishing communities throughout this analysis. Both Indigenous and non-Indigenous residents of the Aleutian Islands and Alaskan Peninsula participate in commercial and subsistence fishing activities, with Indigenous fishers only making up a small portion of the population. Drawing on my personal experience in these tight-knit communities, cultural practices regarding salmon carry across Indigenous and non-Indigenous members alike. Because of this, I take liberties applying "cultural significance" to all community members in the region.
 
 ::: center-text
 **Thank you!**
@@ -314,8 +309,18 @@ I switch between talking about Unangan people and the broader Aleutian fishing c
 #| fig-alt: "Illustration of adult sockeye salmon swimming underwater"
 knitr::include_graphics("sockeye-illustration.png")
 ```
+
 ::: figure-caption
 Image credits: Eric Jablonowski
 :::
+::::::::
 
-:::
+[^1]: In this section, when possible, I will be using the traditional Aleut language, Unangam Tunuu. All words are translated in the [Aleutian Pribilof Islands Associaton's Traditional Foods Glossary](https://www.apiai.org/community-services/traditional-foods-program/glossary-vocabulary/)
+
+[^2]: Alaska Department of Fish and Game. (2023). 2023 preliminary Alaska Commercial Harvest and Exvessel Values. https://www.adfg.alaska.gov/static/fishing/pdfs/commercial/2023_preliminary_salmon_summary_table.pdf
+
+[^3]: SASAP. (n.d.). *Alaska Peninsula/Aleutian Islands* Alaska Peninsula/Aleutian Islands : SASAP : State of Alaska Salmon and People. https://alaskasalmonandpeople.org/region/alaska-peninsula-aleutian-islands/
+
+[^4]: Jeanette Clark, & Alaska Department Fish Game, Division Commercial Fisheries Alaska Department Fish Game, Division Sport Fish Alaska Department Fish Game, Division of and of of and of of and of Subsistence. (2019). Harvest of Salmon across Commercial, Subsistence, Personal Use, and Sport Fish sectors, Alaska, 1995-2016. Knowledge Network for Biocomplexity. doi:10.5063/F1HM56Q3.
+
+[^5]: Brendan Connors, Gregory T Ruggerone, James R Irvine, Adapting management of Pacific salmon to a warming and more crowded ocean, ICES Journal of Marine Science, 2024;, fsae135, https://doi.org/10.1093/icesjms/fsae135

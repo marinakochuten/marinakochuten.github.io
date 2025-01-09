@@ -11,10 +11,10 @@ website:
         text: home
       - href: about.qmd
         text: about
-      - href: resources.qmd
-        text: resources
+#      - href: resources.qmd
+#        text: resources
       - href: posts.qmd
-        text: blog
+        text: my work
   page-footer: 
     background: light
     left: Copyright 2024, Marina Kochuten

@@ -1,8 +1,10 @@
 ---
-title: "blog"
+title: "my work"
+subtitle: "a blog-style portfolio showcasing data science projects"
 listing:
     contents: blog-posts
-    type: grid
+    type: default
     sort: "date desc"
     categories: true
+title-block-banner: true
 ---

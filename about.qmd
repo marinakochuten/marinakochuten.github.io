@@ -39,7 +39,7 @@ Through my experiences with RareCare, I found myself increasingly drawn to the p
 
 As a graduate student, I am growing exponentially both personally and professionally. I am enjoying developing my coding skills, mostly in R and Python, and learning how my diverse experiences uniquely qualify me for environmental problem solving.
 
-Take a look at [my work](marinakochuten.github.io/my_work) to see recent projects that I've been working on.
+Take a look at [my work](marinakochuten.github.io/posts.html) to see recent projects that I've been working on.
 
 ## the play
 

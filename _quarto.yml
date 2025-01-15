@@ -17,6 +17,8 @@ website:
 #        text: resources
       - href: posts.qmd
         text: my work
+      - href: cv/website-resume.pdf
+        text: cv
   page-footer: 
     background: light
     left: Copyright 2024, Marina Kochuten

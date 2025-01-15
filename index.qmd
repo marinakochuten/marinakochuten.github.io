@@ -19,7 +19,7 @@ about:
 ::: darkbrown-text
 ### hi!
 
-**I’m Marina.** Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. As an emerging data scientist, I am constantly curious, creative, and eager to apply my newly developed skills to ecology and conservation. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and hanging with my pup Tahoma. Poke around my site to learn more about me and my work! 
+**I’m Marina.** Currently, I am a Masters student in Environmental Data Science at UCSB’s Bren School of Environmental Science & Resource Management. As an **emerging data scientist**, I am constantly curious, creative, and eager to apply my newly developed skills to **environmental problem solving**. Outside of my work, you can find me cooking a fresh vegetarian meal, enjoying all things outdoors, and hanging with my pup Tahoma. Poke around my site to learn more about me and my work! 
 
 ### education
 
@@ -31,5 +31,5 @@ about:
 **Bachelor of Science in Environmental Science & Resource Management** (December 2019)
 
 - University of Washington (UW), Seattle, WA
-- *Study Abroad*: Council on International Educational Exchange, Tropical Ecology & Conservation, Costa Rica (January – May 2019)
+- Study Abroad: Council on International Educational Exchange, Tropical Ecology & Conservation, Costa Rica (January – May 2019)
 :::

@@ -1,6 +1,6 @@
 ---
 title: "Chinook Salmon Harvest"
-subtitle: "Exploring Chinook salmon harvest within commercial and subsistence fishing sectors in the Aleutian Islands"
+description: "Exploring Chinook salmon harvest within commercial and subsistence fishing sectors in the Aleutian Islands"
 date: last-modified
 author:
   - name: Marina Kochuten

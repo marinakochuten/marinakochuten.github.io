@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   letter-spacing: 3px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
   .title {
@@ -89,3 +89,17 @@ div.quarto-about-trestles .about-entity .about-link:hover {
   color: $yellow;
 }
 
+// resize logo (top left corner)
+.navbar-brand img { 
+  max-height: 90px;
+  width: auto;
+}
+
+// animate logo (rises on hover; HT Briana Barajas :) https://github.com/briana-barajas/briana-barajas.github.io/blob/main/styles.scss )
+.navbar-logo {
+  transition: all 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-4px);
+}

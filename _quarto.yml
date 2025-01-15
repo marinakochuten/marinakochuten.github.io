@@ -4,8 +4,10 @@ project:
 
 website:
   title: "marina kochuten"
+  favicon: images/favicon.png
   navbar:
     title: false
+    logo: images/logo-adobe.png
     right:
       - href: index.qmd
         text: home

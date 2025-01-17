@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marina Kochuten">
-<meta name="dcterms.date" content="2024-12-12">
+<meta name="dcterms.date" content="2025-01-16">
 <meta name="description" content="Using AQI data and false color imagery to visualize the effects of the Thomas Fire on Santa Barbara county">
 
 <title>Visualizing the 2017 Thomas Fire: A Python Analysis – marina kochuten</title>
@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 12, 2024</p>
+        <p class="date">January 16, 2025</p>
       </div>
     </div>
     
@@ -843,7 +843,7 @@ Data variables:
 <span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'AQI during the 2017 Thomas Fire in Santa Barbara County'</span>)</span>
 <span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Add legend</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>ax.legend(labels <span class="op">=</span> [<span class="st">'Daily AQI'</span>, <span class="st">'5-day average AQI'</span>])</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>ax.legend(labels <span class="op">=</span> [<span class="st">'5-day average AQI'</span>, <span class="st">'Daily AQI'</span>])</span>
 <span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Add label indicating the Thomas Fire</span></span>
 <span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>ax.axvline(x <span class="op">=</span> pd.to_datetime(<span class="st">'2017-12-01'</span>), color <span class="op">=</span> <span class="st">'dimgrey'</span>, linestyle <span class="op">=</span> <span class="st">'dashed'</span>)</span>

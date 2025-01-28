@@ -4,10 +4,10 @@ project:
 
 website:
   title: "marina kochuten"
-  favicon: images/favicon.png
+  favicon: images/Untitled.png
   navbar:
     title: false
-    logo: images/logo-adobe.png
+    logo: images/logo-no-background.png
     right:
       - href: index.qmd
         text: home
@@ -17,8 +17,8 @@ website:
 #        text: resources
       - href: posts.qmd
         text: my work
-      - href: cv/website-resume.pdf
-        text: cv
+#      - href: cv/website-resume.pdf
+#        text: cv
   page-footer: 
     background: light
     left: Copyright 2024, Marina Kochuten

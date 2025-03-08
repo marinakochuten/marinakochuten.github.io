@@ -1,0 +1,28 @@
+---
+title: "Un-sung Pollination Hero"
+description: "It's a wasp! It's a bee! No, it's a... hoverfly???"
+date: last-modified
+author:
+  - name: Marina Kochuten
+    url: https://marinakochuten.github.io/
+    affiliation: MEDS
+    affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
+categories: [MEDS, Data-viz]
+toc: true
+#bibliography: references.bib
+#csl: plos-computational-biology.csl
+image: hoverfly-on-flower.jpg
+citation:
+  url: https://marinakochuten.github.io/blog-posts/hoverflies/
+#draft: true
+draft-mode: visible
+editor_options: 
+  chunk_output_type: console
+warning: false 
+messages: false
+format:
+  html:
+    theme: styles.scss
+    mainfont: Montserrat
+    page-layout: article
+---

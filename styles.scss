@@ -40,87 +40,8 @@ $footer-fg: $grey2;  // footer text
 $link-color: $dark-green2;   // hyperlink color
 
 // Inline code
-//$code-bg: $light-yellow;
-//$code-color: $dark_brown;
-
-// Code blocks
-//$code-block-bg: $light-green;
-
-
-/*-- scss:rules --*/
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $montserrat;
-  font: bold;
-  letter-spacing: 2px;
-}
-
-h1, h2 {
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-  .title {
-    color: $grey;
-  }
-  
-  .center-text {
-    text-align: center;
-  }
-
-  .darkbrown-text {
-    color: $dark_brown;
-    font-family: $quattrocento-sans;
-    font-size: 18px;
-  }
-  
-  .darkgrey-text {
-    color: $grey;
-    font-family: $quattrocento-sans;
-    
-  }
-  
-  .center-green {
-    color: $dark_green;
-    text-align: center;
-  }
-
- .navbar-brand img {
-   max-height: 40px;
-   width: auto;
- }
- 
- // figure caption text styling
-.figure-caption {
-  color: $grey2;
-  font-style: italic;
-  font-size: 12px;
-  text-align: center;
-}
-
-  
-div.quarto-about-trestles .about-entity .about-link {
-  color: $grey;
-}
-
-div.quarto-about-trestles .about-entity .about-link:hover {
-  color: $dark-green2;
-}
-
-// resize logo (top left corner)
-.navbar-brand img { 
-  max-height: 60px;
-  width: auto;
-}
-
-// animate logo (rises on hover; HT Briana Barajas :) https://github.com/briana-barajas/briana-barajas.github.io/blob/main/styles.scss )
-.navbar-logo {
-  transition: all 0.3s;
-}
-
-.navbar-logo:hover {
-  transform: translateY(-4px);
-}
+$code-bg: #fdf6e3;
+$code-color: $grey;
 
 // Solarized Color Palette
 $solarized-base03: #002b36;
@@ -229,9 +150,89 @@ pre {
 .token.italic {
   font-style: italic;
 }
-
+ 
 pre .line-highlight {
   background-color: $solarized-base2;
   border-left: 4px solid $solarized-cyan;
+}
+
+
+// Code blocks
+//$code-block-bg: $light-green;
+
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $montserrat;
+  font: bold;
+  letter-spacing: 2px;
+}
+
+h1, h2 {
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+  .title {
+    color: $grey;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+
+  .darkbrown-text {
+    color: $dark_brown;
+    font-family: $quattrocento-sans;
+    font-size: 18px;
+  }
+  
+  .darkgrey-text {
+    color: $grey;
+    font-family: $quattrocento-sans;
+    
+  }
+  
+  .center-green {
+    color: $dark_green;
+    text-align: center;
+  }
+
+ .navbar-brand img {
+   max-height: 40px;
+   width: auto;
+ }
+ 
+ // figure caption text styling
+.figure-caption {
+  color: $grey2;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+
+  
+div.quarto-about-trestles .about-entity .about-link {
+  color: $grey;
+}
+
+div.quarto-about-trestles .about-entity .about-link:hover {
+  color: $dark-green2;
+}
+
+// resize logo (top left corner)
+.navbar-brand img { 
+  max-height: 60px;
+  width: auto;
+}
+
+// animate logo (rises on hover)
+.navbar-logo {
+  transition: all 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-4px);
 }
 

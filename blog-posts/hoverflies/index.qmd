@@ -24,7 +24,6 @@ messages: false
 format:
   html:
     theme: styles.scss
-    mainfont: Montserrat
     page-layout: article
     highlight-style: solarized
 ---

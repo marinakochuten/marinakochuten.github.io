@@ -26,7 +26,7 @@ format:
     mainfont: Montserrat
     page-layout: article
 ---
-
+::: darkgrey-text
 ## Background
 
 Monitoring the distribution and change in land cover types can help us understand the impacts of phenomena like climate change, natural disasters, deforestation, and urbanization. Determining land cover types over large areas is a major application of remote sensing because we are able to distinguish different materials based on their spectral reflectance.
@@ -277,3 +277,4 @@ tm_shape(SB_classification) +
 ## Acknowledgements
 
 This post was heavily reused from an assignment for the graduate course EDS 223: Geospatial Analysis and Remote Sensing in the [Masters of Environmental Data Science (MEDS) program](https://bren.ucsb.edu/masters-programs/master-environmental-data-science), created by [Dr. Ruth Oliver](https://bren.ucsb.edu/people/ruth-oliver).
+:::

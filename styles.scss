@@ -2,15 +2,23 @@
 
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
 
 // Create font variables 
 $barlow-condensed: "Barlow Condensed", sans-serif;
 $montserrat: "Montserrat", sans-serif;
+$quattrocento: "Quattrocento", serif;
+$quattrocento-sans: "Quattrocento Sans", sans-serif;
 
 // Colors
 $dark_green: #656D4A;
+$dark_green2:#7BA04B;
 $dark_brown: #674636;
+$grey: #444444;
+$grey2: #555555;
 $cream: #FFF8E8;
+$cream2: #FFFCF6;
 $yellow: #F3CA52;
 $light-yellow: #FCEEC5;
 $dark-yellow: #D5A30B;
@@ -23,26 +31,142 @@ $dark-cream: #F1EAE4;
 $light-green: #E8E3C5;
 
 // Quarto Sass Variables
-$body-bg: $cream; // body background
+$body-bg: $cream2; // body background
 $navbar-bg: $dark_green; // navbar background
-$navbar-fg: $cream;  // navbar text
-$navbar-hl: $yellow;  // text color for page you are on
-$footer-bg: $cream;  // footer background
-$footer-fg: $dark_brown;  // footer text
-$link-color: $dark-yellow;   // hyperlink color
+$navbar-fg: $cream2;  // navbar text
+$navbar-hl: $dark-green2;  // text color for page you are on
+$footer-bg: $cream2;  // footer background
+$footer-fg: $grey2;  // footer text
+$link-color: $dark-green2;   // hyperlink color
 
 // Inline code
-$code-bg: $light-yellow;
-$code-color: $dark_brown;
+$code-bg: #fdf6e3;
+$code-color: $grey;
+
+// Solarized Color Palette
+$solarized-base03: #002b36;
+$solarized-base02: #073642;
+$solarized-base01: #586e75;
+$solarized-base00: #657b83;
+$solarized-base0: #839496;
+$solarized-base1: #93a1a1;
+$solarized-base2: #eee8d5;
+$solarized-base3: #fdf6e3;
+$solarized-yellow: #b58900;
+$solarized-orange: #cb4b16;
+$solarized-red: #dc322f;
+$solarized-magenta: #d33682;
+$solarized-violet: #6c71c4;
+$solarized-blue: #268bd2;
+$solarized-cyan: #2aa198;
+$solarized-green: #859900;
+
+// Code block styles
+code {
+  //font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;
+  color: $solarized-base0;
+  background-color: $solarized-base03;
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+ // border: 1px solid $solarized-base02;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  //background-color: $solarized-base03;
+  color: $solarized-base0;
+  padding: 1em;
+  border-radius: 0.5em;
+  //border: 1px solid $solarized-base02;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// Code block syntax highlighting
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $solarized-base01;
+}
+
+.token.punctuation {
+  color: $solarized-base0;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: $solarized-red;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: $solarized-green;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: $solarized-blue;
+}
+
+.token.atrule,
+.token.keyword {
+  color: $solarized-magenta;
+}
+
+.token.function,
+.token.class-name {
+  color: $solarized-yellow;
+}
+
+.token.regex,
+.token.important {
+  color: $solarized-cyan;
+}
+
+.token.variable-2,
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+ 
+pre .line-highlight {
+  background-color: $solarized-base2;
+  border-left: 4px solid $solarized-cyan;
+}
+
 
 // Code blocks
-$code-block-bg: $light-green;
+//$code-block-bg: $light-green;
 
 
 /*-- scss:rules --*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $montserrat;
+  font: bold;
+  letter-spacing: 2px;
 }
 
 h1, h2 {
@@ -51,7 +175,7 @@ h1, h2 {
 }
 
   .title {
-    color: $dark_brown;
+    color: $grey;
   }
   
   .center-text {
@@ -60,6 +184,14 @@ h1, h2 {
 
   .darkbrown-text {
     color: $dark_brown;
+    font-family: $quattrocento-sans;
+    font-size: 18px;
+  }
+  
+  .darkgrey-text {
+    color: $grey;
+    font-family: $quattrocento-sans;
+    
   }
   
   .center-green {
@@ -74,7 +206,7 @@ h1, h2 {
  
  // figure caption text styling
 .figure-caption {
-  color: $dark_brown;
+  color: $grey2;
   font-style: italic;
   font-size: 12px;
   text-align: center;
@@ -82,11 +214,11 @@ h1, h2 {
 
   
 div.quarto-about-trestles .about-entity .about-link {
-  color: $dark_brown;
+  color: $grey;
 }
 
 div.quarto-about-trestles .about-entity .about-link:hover {
-  color: $yellow;
+  color: $dark-green2;
 }
 
 // resize logo (top left corner)
@@ -95,7 +227,7 @@ div.quarto-about-trestles .about-entity .about-link:hover {
   width: auto;
 }
 
-// animate logo (rises on hover; HT Briana Barajas :) https://github.com/briana-barajas/briana-barajas.github.io/blob/main/styles.scss )
+// animate logo (rises on hover)
 .navbar-logo {
   transition: all 0.3s;
 }
@@ -103,3 +235,4 @@ div.quarto-about-trestles .about-entity .about-link:hover {
 .navbar-logo:hover {
   transform: translateY(-4px);
 }
+

@@ -21,8 +21,16 @@ website:
 #        text: cv
   page-footer: 
     background: light
-    left: Copyright 2024, Marina Kochuten
-    right: This website is built with {{< fa heart title="a solid heart icon" >}} & {{< fa brands github title="the octocat github icon" >}}
+    left: "&copy; 2024 Marina Kochuten"
+    right: 
+    - icon: linkedin
+      href: https://www.linkedin.com/in/marina-kochuten-4786b6324/
+      #target: blank
+    - icon: github
+      href: https://github.com/marinakochuten
+      #target: blank
+    - icon: envelope
+      href: mailto:marinakochuten@bren.ucsb.edu
 format:
   html:
     theme: styles.scss

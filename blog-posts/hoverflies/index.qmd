@@ -14,24 +14,26 @@ toc: true
 image: hoverfly-on-flower.jpg
 citation:
   url: https://marinakochuten.github.io/blog-posts/hoverflies/
-draft: true
-draft-mode: visible
+# draft: true
+# draft-mode: visible
 editor_options: 
   chunk_output_type: console
 warning: false 
 messages: false
+
 format:
   html:
     theme: styles.scss
-    mainfont: Montserrat
     page-layout: article
+    highlight-style: solarized
 ---
+::: darkgrey-text
 
 ![](fly.png){width=50% fig-align="center" fig-alt="Scientific illustration of a hoverfly, looking straight down at its back with its wings spread"}
 
-Half the size of your average bee, named for their curious hovering flight, and master's of Batesian mimicry, hoverflies are gentle bee look-alikes that act as essential pollinators. Globally, there are thousands of hoverfly species all helping to pollinate over 70% of wild plant species, and are second only to wild bees in regards to pollination efficiency.^[Doyle, T., Hawkes, W. L., Massy, R., Powney, G. D., Menz, M. H., & Wotton, K. R. 2020. Pollination by hoverflies in the Anthropocene. Proceedings of the Royal Society B: Biological Sciences, 287(1927), 20200508.] They don't sting or bite, and their larvae are even known to eat aphids and other small garden pests!
+Half the size of your average bee, named for their curious hovering flight, and master's of Batesian mimicry, hoverflies are gentle bee look-alikes and essential pollinators. Globally, there are thousands of hoverfly species all helping to pollinate over 70% of wild plant species, and are second only to wild bees in pollination efficiency.^[Doyle, T., Hawkes, W. L., Massy, R., Powney, G. D., Menz, M. H., & Wotton, K. R. 2020. Pollination by hoverflies in the Anthropocene. Proceedings of the Royal Society B: Biological Sciences, 287(1927), 20200508.] They don't sting or bite, and their larvae eat aphids and other small garden pests!
 
-Perhaps the most striking is their capability of long-distance pollen transfer. Unlike bees, which rarely travel farther than 1-2km from their home nests, hoverflies are known to be highly migratory, some even travelling comparable distances as that traveled by monarch butterflies. Studies based in the UK have shown that hoverflies may cover hundreds of kilometers in a single day, even over open water, as a result facilitating gene flow between plant populations that may otherwise remain unconnected!^[Wotton K. R., Gao B., Menz M. H. M., Morris R. K. A., Ball S. G., Lim K. S., Reynolds D. R., Hu G., Chapman J. W. 2019. Mass seasonal migrations of hoverflies provide extensive pollination and crop protection services. Curr. Biol. 29, 2167-2173.e5.]
+Perhaps the most striking is their long-distance pollen transfer. Unlike bees, which rarely travel farther than 1-2km from their home nests, hoverflies are known to be highly migratory, some even travelling distances comparable to monarch butterfly migration. Studies based in the UK have shown that hoverflies may cover hundreds of kilometers in a single day, even over open water, facilitating gene flow between plant populations that may otherwise remain unconnected.^[Wotton K. R., Gao B., Menz M. H. M., Morris R. K. A., Ball S. G., Lim K. S., Reynolds D. R., Hu G., Chapman J. W. 2019. Mass seasonal migrations of hoverflies provide extensive pollination and crop protection services. Curr. Biol. 29, 2167-2173.e5.]
 
 However, despite these crucial ecosystem services, they are often underappreciated when compared to other pollinator species such as bees and wasps.^[Chisausky, J. L., Soley, N. M., Kassim, L., Bryan, C. J., Miranda, G., Gage, K. L., and Sipes, S. D. 2020. Syrphidae of Southern Illinois: Diversity, floral associations, and preliminary assessment of their efficacy as pollinators. Biodiversity Data Journal, 8, e57331.] 
 
@@ -50,7 +52,7 @@ My final infographic is made up of 3 plots, all of which were built using a comb
 
 #### Petal shaped pie chart
 
-I knew from the beginning that there was a lot of room with this data set to play with making cute, flowery viz. I thought it would be so fun to make a flower shaped pie chart where each petal was sized congruently with its value. As we've learned throughout the quarter, volume can be tricky to interpret, so in order for that plot to work, there needed to be a big enough difference between my groups. The main takeaway from this plot is that hoverflies are the biggest group, and luckily that is clear in the visualization. 
+When I chose this data set, I was excited by the idea of making cute, flowery viz. I thought it would be so fun to make a flower shaped pie chart where each petal was sized congruently with its value. As we've learned throughout the quarter, volume can be tricky to interpret, so in order for that plot to work, there needed to be a big enough difference between my groups. The main takeaway from this plot is that hoverflies are the biggest group, and luckily that is clear in the visualization. 
 
 In ggplot, I used a totally void theme with the plan to use annotations and body text in place of traditional axes and titles. I also intentionally ordered the petals from largest to smallest, starting with the largest petal facing about 1 o'clock, and moving clockwise from there. This draws the readers eye to the largest petal first, centering hoverflies. 
 
@@ -68,7 +70,7 @@ Here is that polished plot, annotated in Affinity:
 
 #### Map
 
-Next, I wanted to make a super simple map that would contextualize where the data came from, and how far hoverflies can carry pollen. For this, I used tmap rather than ggplot. Starting with a super simple outline of Oregon, I layered on an X marking the data collection sites, and a 100km buffer surrounding that point representing the distance that hoverflies can travel. 
+Next, I wanted to make a super simple map that would both contextualize where the data came from, and how far hoverflies can carry pollen. For this, I used tmap rather than ggplot. Starting with a super simple outline of Oregon, I layered on an X marking the data collection sites, and a 100km buffer surrounding that point representing the distance that hoverflies can travel. 
 
 Here is what I came up with using tmap:
 
@@ -84,7 +86,7 @@ Here is a look at the final map:
 
 #### Favorite flowers lollipop chart
 
-Finally, my favorite piece of the infographic. I wanted to show side by side that hoverflies and bumble bees prefer different plants. Starting in ggplot, I created two lollipop charts, showing the species that each pollinator visited the most ordered from #1 to #3. For this plot, I used a mostly blank theme, but kept the axis labels and horizontal grid lines to keep the chart feel. 
+Finally, my favorite piece of the infographic. I wanted to show side by side that hoverflies and bumble bees prefer different plants. Starting in ggplot, I created two lollipop charts, showing the species that each pollinator visited the most ordered from #1 to #3. For this plot, I used a mostly blank theme, but kept the axis labels and horizontal grid lines to keep the chart feel and provide context to what I mean by "favorite". 
 
 Here were my charts coming out of ggplot, ready for Affinity magic:
 
@@ -94,7 +96,7 @@ Here were my charts coming out of ggplot, ready for Affinity magic:
 ![](bee-lolli.png){fig-alt="A lollipop chart with flowers Nutall's Larkspur, Blue Thimble Flower, and Mountain Owl's Clover on the x-axis and Number of flower visits ranging from 0 to 8000 on the y-axis. Nutall's Larkspur is the tallest line, followed by Blue Thimble Flower and Mountain Owl's Clover."}
 :::
 
-Again, I moved over to Affinity for the finishing touches. For this I had big plans, really wanting to make each line look like the species they represented. I was able to find beautiful illustrations online (check out the artists listed in the footer of my infographic!) and overlay the lines with the flowers themselves. I was careful to make sure that the heights of the flowers lined up with the heights of the bars. Next, I used arrows and annotations to point out that the species that bumble bees pollinate the most is the 3rd most common meadow flower, while the species that hover flies pollinate the most is the 18th most common! 
+Again, I moved over to Affinity for the finishing touches. For this I had big plans, wanting to make each line look like the species they represented. I was able to find beautiful illustrations online (check out the artists listed in the footer of my infographic!) and overlay the lines with the flowers themselves. I was careful to make sure that the heights of the flowers lined up with the heights of the bars. Next, I used arrows and annotations to point out that the species that bumble bees pollinate the most is the 3rd most common meadow flower, while the species that hover flies pollinate the most is the 18th most common! 
 
 I love the way this one turned out, giving a taste of our beautiful blooming Western Cascade meadows:
 
@@ -111,11 +113,11 @@ I aimed to have the colors feel light and springy, while also matching colors ty
 
 ![](palette.png){width=40% fig-align="center" fig-alt="A photo of a color palette with a range of pinks and oranges, as seen by true vision, and 3 common types of color blindness."}
 
-The colors weren't perfect, but I was careful to make sure that I never relied solely on color to communicate any important messages. 
+The colors weren't perfectly color blind friendly, but I was careful to make sure that I never relied solely on color to communicate any important messages. 
 
 I also knew that though I didn't want a stark white background, I did want it to be quite light. I settled on a slight pink, which I think compliments the flower illustrations nicely. 
 
-For the first time, I found choosing a font easier than choosing colors! For all of the font families, I used Quicksand, which I found to feel quite flowery while still being simple and super easy to read. I also chose to use bolded, highlighted text all throughout my infographic, to help the reader focus on the key messages. 
+For the first time, I found choosing a font easier than choosing colors! For all of the font families, I used Quicksand, which I found to feel quite flowery while still being simple and easy to read. I also chose to use bolded, highlighted text throughout my infographic, to help the reader focus on the key messages. 
 
 
 ##### General design, contextulaizing the data, & centering my primary message
@@ -128,7 +130,7 @@ Finally, I wanted to find a way to help the reader move sequentially through eac
 
 ##### Accessibility and DEIJ
 
-It's always essential to consider accessibility and DEI when communicating about data. I already touched on ensuring that my color palette was color blind friendly, and in addition to this I embedded alt text to all of my images. I try and approach all of my work with a DEIJ lens, and the nature of the data allows for some leniency here.
+It's always essential to consider accessibility and DEIJ when communicating about data. I already touched on ensuring that my color palette was color blind friendly, and in addition to this I embedded alt text to all of my images.
 
 #### Explore the code!
 
@@ -344,7 +346,7 @@ hvb |>
   )
 ```
 
-
+:::
 
 
 

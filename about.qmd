@@ -82,5 +82,5 @@ I love taking inspiration from my surroundings for bead project color palettes! 
 
 -   Outdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur
 
--   Otherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I'm pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you'd like to chat DIY solar systems, woodworking tips, or road-trip planning `r fontawesome::fa("smile", fill = "#674636", a11y = "sem")`
+-   Otherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I'm pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you'd like to chat DIY solar systems, woodworking tips, or road-trip planning `r fontawesome::fa("smile", fill = "#444444", a11y = "sem")`
 :::::::::::

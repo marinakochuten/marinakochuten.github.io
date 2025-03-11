@@ -43,7 +43,7 @@ $link-color: $dark-green2;   // hyperlink color
 $code-bg: #fdf6e3;
 $code-color: $grey;
 
-// Solarized Color Palette
+// Solarized Color Palette for code blocks
 $solarized-base03: #002b36;
 $solarized-base02: #073642;
 $solarized-base01: #586e75;
@@ -62,30 +62,24 @@ $solarized-cyan: #2aa198;
 $solarized-green: #859900;
 
 // Code block styles
-code {
-  //font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95em;
-  color: $solarized-base0;
-  background-color: $solarized-base03;
-  padding: 0.2em 0.4em;
-  border-radius: 0.3em;
- // border: 1px solid $solarized-base02;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+$code-font-size: 0.95em;
+$code-color: $solarized-base0;
+$code-background-color: $solarized-base03;
+$code-padding: 0.2em 0.4em;
+$code-border-radius: 0.3em;
+$code-white-space: pre-wrap;
+$code-word-wrap: break-word;
 
-pre {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9em;
-  //background-color: $solarized-base03;
-  color: $solarized-base0;
-  padding: 1em;
-  border-radius: 0.5em;
-  //border: 1px solid $solarized-base02;
-  overflow: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+
+// Pre block styles
+$pre-font-family: 'Courier New', Courier, monospace;
+$pre-font-size: 0.9em;
+$pre-color: $solarized-base0;
+$pre-padding: 1em;
+$pre-border-radius: 0.5em;
+$pre-overflow: auto;
+$pre-white-space: pre-wrap;
+$pre-word-wrap: break-word;
 
 // Code block syntax highlighting
 .token.comment,
@@ -155,10 +149,6 @@ pre .line-highlight {
   background-color: $solarized-base2;
   border-left: 4px solid $solarized-cyan;
 }
-
-
-// Code blocks
-//$code-block-bg: $light-green;
 
 
 /*-- scss:rules --*/

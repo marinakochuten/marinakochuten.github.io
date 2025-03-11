@@ -15,7 +15,7 @@ image: IMG_0190.JPG
 citation:
   url: https://marinakochuten.github.io/blog-posts/2024-10-18-my-first-post/
 draft: true
-draft-mode: visible
+draft-mode: hidden 
 ---
 
 ## This is my first section

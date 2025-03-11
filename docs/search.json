@@ -355,33 +355,5 @@
     "title": "Un-sung Pollination Hero",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nDoyle, T., Hawkes, W. L., Massy, R., Powney, G. D., Menz, M. H., & Wotton, K. R. 2020. Pollination by hoverflies in the Anthropocene. Proceedings of the Royal Society B: Biological Sciences, 287(1927), 20200508.↩︎\nWotton K. R., Gao B., Menz M. H. M., Morris R. K. A., Ball S. G., Lim K. S., Reynolds D. R., Hu G., Chapman J. W. 2019. Mass seasonal migrations of hoverflies provide extensive pollination and crop protection services. Curr. Biol. 29, 2167-2173.e5.↩︎\nChisausky, J. L., Soley, N. M., Kassim, L., Bryan, C. J., Miranda, G., Gage, K. L., and Sipes, S. D. 2020. Syrphidae of Southern Illinois: Diversity, floral associations, and preliminary assessment of their efficacy as pollinators. Biodiversity Data Journal, 8, e57331.↩︎"
-  },
-  {
-    "objectID": "blog-posts/2024-10-18-my-first-post/index.html",
-    "href": "blog-posts/2024-10-18-my-first-post/index.html",
-    "title": "blog post title",
-    "section": "",
-    "text": "I’m going to insert a footnote here1"
-  },
-  {
-    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
-    "href": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
-    "title": "blog post title",
-    "section": "",
-    "text": "I’m going to insert a footnote here1"
-  },
-  {
-    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-second",
-    "href": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-second",
-    "title": "blog post title",
-    "section": "This is my second",
-    "text": "This is my second\nHere’s my next paragraph2\nI’m citing Sam [1]\nHere is more random text. I’m going to cite a journal article now. [2]"
-  },
-  {
-    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#footnotes",
-    "href": "blog-posts/2024-10-18-my-first-post/index.html#footnotes",
-    "title": "blog post title",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nHere is a new footnote↩︎\nHere is my second footnote↩︎"
   }
 ]

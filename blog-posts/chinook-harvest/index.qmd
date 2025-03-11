@@ -25,9 +25,10 @@ format:
     theme: styles.scss
     mainfont: Montserrat
     page-layout: article
+    highlight-style: solarized
 ---
 
-:::::::: darkbrown-text
+:::::::: darkgrey-text
 In the Aleutians, summer is the highly anticipated "Sockeye (aanux̂)[^1] Season". For many of the Indigenous *(Unangan)* residents, fishing is not only a way to make a living - it is *the* way to live. Fishing provides income, food to sustain a family for the year, and cultural connection to our land, community, and ancestors.
 
 :::: column-margin

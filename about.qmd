@@ -9,21 +9,22 @@ lightbox:
   effect: zoom
 ---
 
-:::::::: darkbrown-text
+::::::::::: darkgrey-text
 ## the lore
 
 **My passion for ecology stems from my heritage.** I am mixed-Indigenous Unangax̂ raised on Coast Salish lands in Northwestern Washington State, a community at the forefront of climate change adaptation. My appreciation for nature undoubtedly grew from the beauty and cultural significance of my homelands.
 
-::: column-margin
+:::: column-margin
 ```{r}
 #| echo: false
 #| fig-alt: "A woman kneeling down in a forest over a large tropical leaf, taking notes in a journal."
 knitr::include_graphics("images/costa-rica.jpg")
 ```
+
 ::: figure-caption
 Data collection in Monteverde, Costa Rica
 :::
-:::
+::::
 
 In undergrad, I earned a BS in Environmental Science and Resource Management from the University of Washington (2019). Members of my community taught me early on the importance of environmental problem solving and in many ways, my chosen career path is how I continue our legacy of indigenous stewardship.
 
@@ -45,7 +46,6 @@ Rare plant monitoring in Olympic National Park
 
 My **undergraduate research** included work with UW’s hydro-biogeochemistry lab studying methane emissions from permafrost thaw bogs, and a capstone project conducted in Costa Rica’s cloud forest examining the relationship between mycorrhizal abundance and soil organic carbon. After graduation, I worked alongside the National Parks Service as a **field ecologist** with UW Botanic Gardens’ RareCare program. My small team and I utilized **GIS** and field techniques to establish **long-term monitoring** plots for **rare and endangered alpine plants** throughout Washington’s Olympic and North Cascades National Parks.
 
-
 **As a graduate student**, I am growing exponentially both personally and professionally. I am enjoying developing my **coding skills**, mostly in R and Python, and learning how my diverse experiences uniquely qualify me for environmental problem solving. The work is tough, and I am absolutely loving every minute of it.
 
 :::: column-margin
@@ -60,13 +60,9 @@ My second home (on-wheels), Trashcan the Van, parked among the Giant Cardons in 
 :::
 ::::
 
-Take a look at [my work](posts.qmd) to see recent projects that I've been working on. 
-
-
+Take a look at [my work](posts.qmd) to see recent projects that I've been working on.
 
 ## the play
-
-
 
 When my head is not buried in code, you can find me pursuing my many other interests:
 
@@ -87,7 +83,4 @@ I love taking inspiration from my surroundings for bead project color palettes! 
 -   Outdoors, you can catch me biking, hiking, climbing, swimming in all the alpine lakes, and snowboarding like an amateur
 
 -   Otherwise, find me tinkering on the pet project, my self-built campervan (aka, Trashcan the Van). In 2021 I converted an empty cargo van into a cozy, off-grid, home on wheels with no experience and very limited tools. I'm pretty dang proud of the thing, and my dog Tahoma and I have taken Trashcan over 10,000 miles, traveled to 30 states, and 3 countries. Let me know if you'd like to chat DIY solar systems, woodworking tips, or road-trip planning `r fontawesome::fa("smile", fill = "#674636", a11y = "sem")`
-
-
-::::::::
-
+:::::::::::

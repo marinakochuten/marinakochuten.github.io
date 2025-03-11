@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Marina Kochuten">
-<meta name="dcterms.date" content="2025-03-10">
+<meta name="dcterms.date" content="2025-03-11">
 <meta name="description" content="It’s a wasp! It’s a bee! No, it’s a… hoverfly?">
 
 <title>Un-sung Pollination Hero – marina kochuten</title>
@@ -77,8 +77,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +104,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
 
 </head>
@@ -114,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -186,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 10, 2025</p>
+        <p class="date">March 11, 2025</p>
       </div>
     </div>
     
@@ -207,13 +204,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<div class="darkgrey-text">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="fly.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="Scientific illustration of a hoverfly, looking straight down at its back with its wings spread"></p>
 </figure>
 </div>
-<p>Half the size of your average bee, named for their curious hovering flight, and master’s of Batesian mimicry, hoverflies are gentle bee look-alikes that act as essential pollinators. Globally, there are thousands of hoverfly species all helping to pollinate over 70% of wild plant species, and are second only to wild bees in regards to pollination efficiency.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> They don’t sting or bite, and their larvae are even known to eat aphids and other small garden pests!</p>
-<p>Perhaps the most striking is their capability of long-distance pollen transfer. Unlike bees, which rarely travel farther than 1-2km from their home nests, hoverflies are known to be highly migratory, some even travelling comparable distances as that traveled by monarch butterflies. Studies based in the UK have shown that hoverflies may cover hundreds of kilometers in a single day, even over open water, as a result facilitating gene flow between plant populations that may otherwise remain unconnected!<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Half the size of your average bee, named for their curious hovering flight, and master’s of Batesian mimicry, hoverflies are gentle bee look-alikes and essential pollinators. Globally, there are thousands of hoverfly species all helping to pollinate over 70% of wild plant species, and are second only to wild bees in pollination efficiency.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> They don’t sting or bite, and their larvae eat aphids and other small garden pests!</p>
+<p>Perhaps the most striking is their long-distance pollen transfer. Unlike bees, which rarely travel farther than 1-2km from their home nests, hoverflies are known to be highly migratory, some even travelling distances comparable to monarch butterfly migration. Studies based in the UK have shown that hoverflies may cover hundreds of kilometers in a single day, even over open water, facilitating gene flow between plant populations that may otherwise remain unconnected.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <p>However, despite these crucial ecosystem services, they are often underappreciated when compared to other pollinator species such as bees and wasps.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>Using long term plant-pollinator interaction data from the HJ Andrews Experimental Forest, I wanted to showcase hoverflies while comparing them to a big time pollination star, bumble bees. To do so, I created an infographic that addresses the following questions:</p>
 <ul>
@@ -233,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>My final infographic is made up of 3 plots, all of which were built using a combination of ggplot and Affinity Designer. Let’s break it down and walk through my decision making for each aspect of the vizualization!</p>
 <section id="petal-shaped-pie-chart" class="level4">
 <h4 class="anchored" data-anchor-id="petal-shaped-pie-chart">Petal shaped pie chart</h4>
-<p>I knew from the beginning that there was a lot of room with this data set to play with making cute, flowery viz.&nbsp;I thought it would be so fun to make a flower shaped pie chart where each petal was sized congruently with its value. As we’ve learned throughout the quarter, volume can be tricky to interpret, so in order for that plot to work, there needed to be a big enough difference between my groups. The main takeaway from this plot is that hoverflies are the biggest group, and luckily that is clear in the visualization.</p>
+<p>When I chose this data set, I was excited by the idea of making cute, flowery viz.&nbsp;I thought it would be so fun to make a flower shaped pie chart where each petal was sized congruently with its value. As we’ve learned throughout the quarter, volume can be tricky to interpret, so in order for that plot to work, there needed to be a big enough difference between my groups. The main takeaway from this plot is that hoverflies are the biggest group, and luckily that is clear in the visualization.</p>
 <p>In ggplot, I used a totally void theme with the plan to use annotations and body text in place of traditional axes and titles. I also intentionally ordered the petals from largest to smallest, starting with the largest petal facing about 1 o’clock, and moving clockwise from there. This draws the readers eye to the largest petal first, centering hoverflies.</p>
 <p>Coming out of ggplot, I had a very bare visualization, ready to be annotated:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -251,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="map" class="level4">
 <h4 class="anchored" data-anchor-id="map">Map</h4>
-<p>Next, I wanted to make a super simple map that would contextualize where the data came from, and how far hoverflies can carry pollen. For this, I used tmap rather than ggplot. Starting with a super simple outline of Oregon, I layered on an X marking the data collection sites, and a 100km buffer surrounding that point representing the distance that hoverflies can travel.</p>
+<p>Next, I wanted to make a super simple map that would both contextualize where the data came from, and how far hoverflies can carry pollen. For this, I used tmap rather than ggplot. Starting with a super simple outline of Oregon, I layered on an X marking the data collection sites, and a 100km buffer surrounding that point representing the distance that hoverflies can travel.</p>
 <p>Here is what I came up with using tmap:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -268,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="favorite-flowers-lollipop-chart" class="level4">
 <h4 class="anchored" data-anchor-id="favorite-flowers-lollipop-chart">Favorite flowers lollipop chart</h4>
-<p>Finally, my favorite piece of the infographic. I wanted to show side by side that hoverflies and bumble bees prefer different plants. Starting in ggplot, I created two lollipop charts, showing the species that each pollinator visited the most ordered from #1 to #3. For this plot, I used a mostly blank theme, but kept the axis labels and horizontal grid lines to keep the chart feel.</p>
+<p>Finally, my favorite piece of the infographic. I wanted to show side by side that hoverflies and bumble bees prefer different plants. Starting in ggplot, I created two lollipop charts, showing the species that each pollinator visited the most ordered from #1 to #3. For this plot, I used a mostly blank theme, but kept the axis labels and horizontal grid lines to keep the chart feel and provide context to what I mean by “favorite”.</p>
 <p>Here were my charts coming out of ggplot, ready for Affinity magic:</p>
 <div>
 
@@ -283,7 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Again, I moved over to Affinity for the finishing touches. For this I had big plans, really wanting to make each line look like the species they represented. I was able to find beautiful illustrations online (check out the artists listed in the footer of my infographic!) and overlay the lines with the flowers themselves. I was careful to make sure that the heights of the flowers lined up with the heights of the bars. Next, I used arrows and annotations to point out that the species that bumble bees pollinate the most is the 3rd most common meadow flower, while the species that hover flies pollinate the most is the 18th most common!</p>
+<p>Again, I moved over to Affinity for the finishing touches. For this I had big plans, wanting to make each line look like the species they represented. I was able to find beautiful illustrations online (check out the artists listed in the footer of my infographic!) and overlay the lines with the flowers themselves. I was careful to make sure that the heights of the flowers lined up with the heights of the bars. Next, I used arrows and annotations to point out that the species that bumble bees pollinate the most is the 3rd most common meadow flower, while the species that hover flies pollinate the most is the 18th most common!</p>
 <p>I love the way this one turned out, giving a taste of our beautiful blooming Western Cascade meadows:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -302,9 +300,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="palette.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%" alt="A photo of a color palette with a range of pinks and oranges, as seen by true vision, and 3 common types of color blindness."></p>
 </figure>
 </div>
-<p>The colors weren’t perfect, but I was careful to make sure that I never relied solely on color to communicate any important messages.</p>
+<p>The colors weren’t perfectly color blind friendly, but I was careful to make sure that I never relied solely on color to communicate any important messages.</p>
 <p>I also knew that though I didn’t want a stark white background, I did want it to be quite light. I settled on a slight pink, which I think compliments the flower illustrations nicely.</p>
-<p>For the first time, I found choosing a font easier than choosing colors! For all of the font families, I used Quicksand, which I found to feel quite flowery while still being simple and super easy to read. I also chose to use bolded, highlighted text all throughout my infographic, to help the reader focus on the key messages.</p>
+<p>For the first time, I found choosing a font easier than choosing colors! For all of the font families, I used Quicksand, which I found to feel quite flowery while still being simple and easy to read. I also chose to use bolded, highlighted text throughout my infographic, to help the reader focus on the key messages.</p>
 </section>
 <section id="general-design-contextulaizing-the-data-centering-my-primary-message" class="level5">
 <h5 class="anchored" data-anchor-id="general-design-contextulaizing-the-data-centering-my-primary-message">General design, contextulaizing the data, &amp; centering my primary message</h5>
@@ -314,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="accessibility-and-deij" class="level5">
 <h5 class="anchored" data-anchor-id="accessibility-and-deij">Accessibility and DEIJ</h5>
-<p>It’s always essential to consider accessibility and DEI when communicating about data. I already touched on ensuring that my color palette was color blind friendly, and in addition to this I embedded alt text to all of my images. I try and approach all of my work with a DEIJ lens, and the nature of the data allows for some leniency here.</p>
+<p>It’s always essential to consider accessibility and DEIJ when communicating about data. I already touched on ensuring that my color palette was color blind friendly, and in addition to this I embedded alt text to all of my images.</p>
 </section>
 </section>
 <section id="explore-the-code" class="level4">
@@ -528,9 +526,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-
-
 </section>
+</div>
+
+
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
@@ -543,13 +542,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{kochuten2025,
   author = {Kochuten, Marina},
   title = {Un-Sung {Pollination} {Hero}},
-  date = {2025-03-10},
+  date = {2025-03-11},
   url = {https://marinakochuten.github.io/blog-posts/hoverflies/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-kochuten2025" class="csl-entry quarto-appendix-citeas" role="listitem">
 Kochuten, Marina. 2025. <span>“Un-Sung Pollination Hero.”</span> March
-10, 2025. <a href="https://marinakochuten.github.io/blog-posts/hoverflies/">https://marinakochuten.github.io/blog-posts/hoverflies/</a>.
+11, 2025. <a href="https://marinakochuten.github.io/blog-posts/hoverflies/">https://marinakochuten.github.io/blog-posts/hoverflies/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -975,14 +974,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2024, Marina Kochuten</p>
+<p>© 2024 Marina Kochuten</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>This website is built with <i class="fa-solid fa-heart" title="a solid heart icon" aria-label="heart"></i> &amp; <i class="fa-brands fa-github" title="the octocat github icon" aria-label="github"></i></p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marina-kochuten-4786b6324/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/marinakochuten">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:marinakochuten@bren.ucsb.edu">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 

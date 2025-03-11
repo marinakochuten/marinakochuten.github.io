@@ -7,7 +7,7 @@ author:
     url: https://marinakochuten.github.io/
     affiliation: MEDS
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
-categories: [Quarto, MEDS, Stats, Randomization]
+categories: [Quarto, MEDS, Supervised-learning]
 toc: true
 #bibliography: references.bib
 #csl: plos-computational-biology.csl
@@ -273,7 +273,6 @@ tm_shape(SB_classification) +
   tm_layout(legend.position = c("left", "bottom"),
             main.title = "Santa Barbara Landcover")
 ```
-
 
 ## Acknowledgements
 

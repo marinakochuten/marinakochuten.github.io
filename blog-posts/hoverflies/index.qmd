@@ -1,6 +1,6 @@
 ---
 title: "Un-sung Pollination Hero"
-description: "It's a wasp! It's a bee! No, it's a... hoverfly???"
+description: "It's a wasp! It's a bee! No, it's a... hoverfly?"
 date: last-modified
 author:
   - name: Marina Kochuten
@@ -14,7 +14,7 @@ toc: true
 image: hoverfly-on-flower.jpg
 citation:
   url: https://marinakochuten.github.io/blog-posts/hoverflies/
-#draft: true
+draft: true
 draft-mode: visible
 editor_options: 
   chunk_output_type: console
@@ -26,3 +26,327 @@ format:
     mainfont: Montserrat
     page-layout: article
 ---
+
+![](fly.png){width=50% fig-align="center" fig-alt="Scientific illustration of a hoverfly, looking straight down at its back with its wings spread"}
+
+Half the size of your average bee, named for their curious hovering flight, and master's of Batesian mimicry, hoverflies are gentle bee look-alikes that act as essential pollinators. Globally, there are thousands of hoverfly species all helping to pollinate over 70% of wild plant species, and are second only to wild bees in regards to pollination efficiency.^[Doyle, T., Hawkes, W. L., Massy, R., Powney, G. D., Menz, M. H., & Wotton, K. R. 2020. Pollination by hoverflies in the Anthropocene. Proceedings of the Royal Society B: Biological Sciences, 287(1927), 20200508.] They don't sting or bite, and their larvae are even known to eat aphids and other small garden pests!
+
+Perhaps the most striking is their capability of long-distance pollen transfer. Unlike bees, which rarely travel farther than 1-2km from their home nests, hoverflies are known to be highly migratory, some even travelling comparable distances as that traveled by monarch butterflies. Studies based in the UK have shown that hoverflies may cover hundreds of kilometers in a single day, even over open water, as a result facilitating gene flow between plant populations that may otherwise remain unconnected!^[Wotton K. R., Gao B., Menz M. H. M., Morris R. K. A., Ball S. G., Lim K. S., Reynolds D. R., Hu G., Chapman J. W. 2019. Mass seasonal migrations of hoverflies provide extensive pollination and crop protection services. Curr. Biol. 29, 2167-2173.e5.]
+
+However, despite these crucial ecosystem services, they are often underappreciated when compared to other pollinator species such as bees and wasps.^[Chisausky, J. L., Soley, N. M., Kassim, L., Bryan, C. J., Miranda, G., Gage, K. L., and Sipes, S. D. 2020. Syrphidae of Southern Illinois: Diversity, floral associations, and preliminary assessment of their efficacy as pollinators. Biodiversity Data Journal, 8, e57331.] 
+
+Using long term plant-pollinator interaction data from the HJ Andrews Experimental Forest, I wanted to showcase hoverflies while comparing them to a big time pollination star, bumble bees. To do so, I created an infographic that addresses the following questions:
+
+- How do hoverflies compare to bumble bees as pollinators?
+  - Other than bees, who are the busiest pollinators?
+  - How do hoverflies shine in ways that bees don't?
+  - What meadow species do bumble bees and hoverflies pollinate the most?
+  
+You can [check out the full data here](https://portal.edirepository.org/nis/metadataviewer?packageid=knb-lter-and.5216.8)!
+
+![](Hover-fly-infographic.png){width=80% fig-align="center" fig-alt="An infographic titled Un-sung pollination hero: Comparing hover flies to bumble bees in Western Oregon meadows. There is one plot shaped like a flower showing that hover flies are the busiest pollinators second only to bees, a map of Oregon showing the study site surrounded by a 100km circle showing the radius that hover flies can travel, and a lollipop chart at the bottom, where the lines are overlaid with flower illustrations, showing the top 3 species for hoverflies and bumble bees"}
+
+My final infographic is made up of 3 plots, all of which were built using a combination of ggplot and Affinity Designer. Let's break it down and walk through my decision making for each aspect of the vizualization!
+
+#### Petal shaped pie chart
+
+I knew from the beginning that there was a lot of room with this data set to play with making cute, flowery viz. I thought it would be so fun to make a flower shaped pie chart where each petal was sized congruently with its value. As we've learned throughout the quarter, volume can be tricky to interpret, so in order for that plot to work, there needed to be a big enough difference between my groups. The main takeaway from this plot is that hoverflies are the biggest group, and luckily that is clear in the visualization. 
+
+In ggplot, I used a totally void theme with the plan to use annotations and body text in place of traditional axes and titles. I also intentionally ordered the petals from largest to smallest, starting with the largest petal facing about 1 o'clock, and moving clockwise from there. This draws the readers eye to the largest petal first, centering hoverflies. 
+
+Coming out of ggplot, I had a very bare visualization, ready to be annotated:
+
+![](flower-plot.png){width=50% fig-align=center fig-alt="An unlabelled flower shaped pie chart"}
+
+Next, I moved into Affinity Designer, where I added all of my text and annotations. Annotating each petal with the pollinator type, the number of times they were observed pollinating, and using bold and highlighted text to emphasize petals representing hover flies, I aimed to make it super easy to see that hover flies were the most observed pollinator. 
+
+Here is that polished plot, annotated in Affinity:
+
+![](flower-plot-affinity.png){width=70% fig-align=center fig-alt="A flower shaped pie chart titled Second only to bees, hoverflies are our busiest pollinators: From 2011 - 2018, hoverflies were observed pollinating ~1/3 times that of bumble bees. Each petal represents a different pollinator, and the size is congruent to the number of times that pollinator was seen visiting a flower. Decomposer hoverflies are the largest group."}
+
+
+
+#### Map
+
+Next, I wanted to make a super simple map that would contextualize where the data came from, and how far hoverflies can carry pollen. For this, I used tmap rather than ggplot. Starting with a super simple outline of Oregon, I layered on an X marking the data collection sites, and a 100km buffer surrounding that point representing the distance that hoverflies can travel. 
+
+Here is what I came up with using tmap:
+
+![](map.png){width=60% fig-align="center" fig-alt="An unlabelled map showing the outline of Oregon state, an x, and a circle surrounding the x."}
+
+I finished up this map in Affinity Designer. Again, aiming to keep this one super simple, I added two annotations to label the meadow sites and the hover fly radius. This, combined with the body text in the infographic, conveys a clear message that hoverflies can pollinate over impressive distances, while giving some context to the data itself.
+
+Here is a look at the final map:
+
+
+![](map-affinity.png){width=60% fig-align="center" fit-alt="A map of Oregon titled Hoverflies carry viable pollen 100x farther than bumble bees!: While bumble bees typically pollinate within 1km of their home nests, hoverflies can pollinate over distances greater than 100km1! This facilitates gene flow between plant populations that may otherwise remain unconnected, and is crucial to plant health. There is an arrow pointing to an X in the northwest region with the label Meadow sites, and an arrow pointing to a circle surrounding the X with the label 100km hoverfly radius"}
+
+
+#### Favorite flowers lollipop chart
+
+Finally, my favorite piece of the infographic. I wanted to show side by side that hoverflies and bumble bees prefer different plants. Starting in ggplot, I created two lollipop charts, showing the species that each pollinator visited the most ordered from #1 to #3. For this plot, I used a mostly blank theme, but kept the axis labels and horizontal grid lines to keep the chart feel. 
+
+Here were my charts coming out of ggplot, ready for Affinity magic:
+
+::: {layout-ncol=2}
+![](fly-lolli.png){fig-alt="A lollipop chart with flowers Gray's Licorice Root, Oregon Sunshine, and Blue Thimble Flower on the x-axis and Number of flower visits ranging from 0 to 4000 on the y-axis. Gray's Licorice Root is the tallest line, followed by Oregon Sunshine and then Blue Thimble Flower."}
+
+![](bee-lolli.png){fig-alt="A lollipop chart with flowers Nutall's Larkspur, Blue Thimble Flower, and Mountain Owl's Clover on the x-axis and Number of flower visits ranging from 0 to 8000 on the y-axis. Nutall's Larkspur is the tallest line, followed by Blue Thimble Flower and Mountain Owl's Clover."}
+:::
+
+Again, I moved over to Affinity for the finishing touches. For this I had big plans, really wanting to make each line look like the species they represented. I was able to find beautiful illustrations online (check out the artists listed in the footer of my infographic!) and overlay the lines with the flowers themselves. I was careful to make sure that the heights of the flowers lined up with the heights of the bars. Next, I used arrows and annotations to point out that the species that bumble bees pollinate the most is the 3rd most common meadow flower, while the species that hover flies pollinate the most is the 18th most common! 
+
+I love the way this one turned out, giving a taste of our beautiful blooming Western Cascade meadows:
+
+![](favorites-lollipop-affinity.png){width=100% fig-align="center" fig-alt="A lollipop chart titled Hoverflies and bumble bees prefer different flowers: diverse pollinators support diverse ecosystems. On the left are hoverflies favorite flowers, with flowers on the x-axis and number of flower visits on the y-axis. On the right are bumble bees favorite flowers, also with flowers on the x-axis and number of flower visits on the y-axis. The lines are overlaid with illustrations of each of the flowers."}
+
+#### Putting it all together
+
+Already settled on my graphic forms, text, and plot themes, it was time to think about colors, typography, general design, contextualizing my data, centering my primary message, and accessibility. 
+
+
+##### Colors & typography
+
+I aimed to have the colors feel light and springy, while also matching colors typically found on a hoverfly. I made my own color palette, leaning into using pinks and oranges. Since I made my own palette, I made sure that the colors were color blind friendly:
+
+![](palette.png){width=40% fig-align="center" fig-alt="A photo of a color palette with a range of pinks and oranges, as seen by true vision, and 3 common types of color blindness."}
+
+The colors weren't perfect, but I was careful to make sure that I never relied solely on color to communicate any important messages. 
+
+I also knew that though I didn't want a stark white background, I did want it to be quite light. I settled on a slight pink, which I think compliments the flower illustrations nicely. 
+
+For the first time, I found choosing a font easier than choosing colors! For all of the font families, I used Quicksand, which I found to feel quite flowery while still being simple and super easy to read. I also chose to use bolded, highlighted text all throughout my infographic, to help the reader focus on the key messages. 
+
+
+##### General design, contextulaizing the data, & centering my primary message
+
+Designing the layout of my infographic to avoid information overload was the most challenging part of building this visualization. I tried to avoid this by keeping each of my individual plots quite simple. I also formatted all of the text absolutely necessary to read as titles, while anything extra I made a bit smaller, giving the reader the option to skim if need be.
+
+I found ways to subtly contextualize the data throughout the infographic. The first and most obvious place is in the main subtitle, where I state that we are comparing hoverflies and bees "in Western Oregon meadows". The next place I try and bring the data back into context is in the map, where I use the study sites to contectualize how far hoverflies can pollinate. Lastly, I use the two annotations in the last plot to say how common each pollinators favorite plant was in "our" meadows, subtly reminding the viewer that the data is coming from one place. 
+
+Finally, I wanted to find a way to help the reader move sequentially through each piece of the infographic. My primary messages, that hoverflies are busy and abundant pollinators that can travel long distances and pollinate different species than bees, are best communicated in that order. To do this, I have a hoverfly "flying" through the infographic, starting at the very top next to the main title and travelling down, making stops at each of my 3 plots. I felt that this was a fun way to guide the viewer, giving the eye something to follow and drawing attention to my key messages. 
+
+##### Accessibility and DEIJ
+
+It's always essential to consider accessibility and DEI when communicating about data. I already touched on ensuring that my color palette was color blind friendly, and in addition to this I embedded alt text to all of my images. I try and approach all of my work with a DEIJ lens, and the nature of the data allows for some leniency here.
+
+#### Explore the code!
+
+Drop down this folded code chunk to see the code used to create these plots
+
+```{r}
+#| code-fold: true
+#| code-summary: "See the code"
+#| eval: false
+
+# Load packages ----
+library(tidyverse)
+library(janitor)
+library(here)
+library(showtext)
+library(tmap)
+library(spData)
+library(sf)
+
+# Read in pollinator data ----
+pp_interactions <- read_csv(here("data", "pp-interactions.csv")) |>
+  clean_names()
+
+################################ Petal Plot ################################
+
+# Add a column with pollinator generic type to group hover flies together ----
+pp_interactions <- pp_interactions |>
+  mutate(pol_type = case_when(str_detect(vissp_type, "beetle") ~ "Beetle",
+                              str_detect(vissp_type, "hover-fly") ~ "Hover Fly",
+                              str_detect(vissp_type, " fly") ~ "Fly",
+                              str_detect(vissp_type, "wasp") ~ "Wasp",
+                              str_detect(vissp_type, "butterfly") ~ "Butterfly",
+                              str_detect(vissp_type, "grasshopper") ~ "Grasshopper",
+                              str_detect(vissp_type, "moth") ~ "Moth",
+                              str_detect(vissp_type, "hummingbird") ~ "Hummingbird",
+                              str_detect(vissp_type, "social") ~ "Social Bee",
+                              str_detect(vissp_type, "solitary") ~ "Solitary Bee",
+                              str_detect(vissp_type, "ant") ~ "Ant",
+                              str_detect(vissp_type, "spider") ~ "Spider",
+                              .default = "other"))
+
+# Wrangle data for petal plot ---- 
+petal_plot_data <- pp_interactions |> 
+  
+  # Remove 2021, as only bees were sampled in this year
+  filter(year != 2021) |>
+  
+  # Filter out bees and "other" pollinators
+  filter(pol_type != "other" & pol_type != "Social Bee" & pol_type != "Solitary Bee") |>
+  
+  # Count total visits per pollinator
+  group_by(vissp_type) |>
+  summarize(visits = sum(no_int, na.rm = TRUE)) |>
+  ungroup() |>
+  
+  # Pull out the top 5 busiest pollinators
+  slice_max(order_by = visits, n = 5)
+
+# Font
+font_add_google(name = "Quicksand", family = "quicksand")
+showtext_auto()
+
+# Define number of petals and petal angle
+petals = 5
+petal_angle = 360/petals
+
+# Plot
+petal_plot_data |>
+  
+  # Calculate angles and radii
+  mutate(petal = row_number(),
+         theta0 = petal * petal_angle) |>
+  reframe(theta = theta0 + c(0, -petal_angle/2,  0, 
+                             petal_angle/2, 0),
+          r = visits * c(0, 0.6, 1, 0.6, 0), .by = c(vissp_type, visits, petal, theta0)) |> 
+  
+  # Plot theta and r and group by petal no. 
+  ggplot(aes(theta, r, group = petal)) +
+  ggforce::stat_bspline(geom = "area", n = 1000, fill = "#E195AB", ) +
+  coord_radial() +
+  theme_void() +
+  theme(
+    plot.title = element_text(family = "quicksand",
+                              face = "bold", 
+                              hjust = 0.5, 
+                              size = 18),
+    plot.subtitle = element_text(family = "quicksand",
+                                 hjust = 0.5),
+    plot.background = element_rect(fill = "white", color = "white")
+  )
+
+################################ Map ################################
+
+# Grab Oregon basemap ----
+oregon <- us_states |>
+  filter(NAME == "Oregon")
+
+# Define region with the coordinates from metadata (min_lat, min_lon, max_lat, max_lon) ----
+min_lat <- 44.20308930 
+min_lon <- -122.15208820	
+max_lat <- 44.28020840	  
+max_lon <- -122.12605670 
+
+# Create a box of the study region ----
+bbox <- st_sfc(st_polygon(list(matrix(c(min_lon, min_lat,
+                                        min_lon, max_lat,
+                                        max_lon, max_lat,
+                                        max_lon, min_lat,
+                                        min_lon, min_lat), 
+                                      ncol = 2, byrow = TRUE))), crs = st_crs(oregon))
+
+# Find the centroid of the box ----
+centroid <- st_centroid(bbox, crs = st_crs(oregon))
+
+# Create buffers around centroid for bee and hover fly ----
+# Transform to a projected crs
+centroid_projected <- st_transform(centroid, crs = 26910)
+
+# Create a 1km buffer (1000 meters)
+bee_buffer <- st_buffer(centroid_projected, dist = 1000) |>
+  st_transform(crs = st_crs(oregon))
+
+# Create a 100km buffer (100000 meters)
+fly_buffer <- st_buffer(centroid_projected, dist = 100000) |>
+  st_transform(crs = st_crs(oregon))
+
+# Map ----
+tm_shape(oregon) +
+  tm_fill(col = "#FDFAFB") +
+  tm_borders(lwd = 5, col = "#666666") +
+  tm_layout(frame = FALSE) +
+  tm_shape(fly_buffer) +
+  tm_borders(col = "#CB904A", lwd = 4) +
+  tm_shape(centroid) +
+  tm_dots(col = "#E195AB", shape = 4, size = 1, border.lwd = 5) +
+  tm_shape(bee_buffer) +
+  tm_fill(col = "black", border.lwd = 2)
+
+
+################################ Favorite Flowers Plot ################################
+
+# Create a pollinator data frame that only includes bumble bees and hover flies ----
+hvb <- pp_interactions |>
+  filter(year != 2021) |>
+  filter(str_detect(vissp_type, "hover-fly") | str_detect(vissp_name, "Bombus")) |>
+  mutate(pollinator = case_when(str_detect(vissp_type, "hover-fly") ~ "Hover-fly",
+                                str_detect(vissp_type, "bee") ~ "Bee")) |>
+  group_by(pltsp_code, pollinator) |>
+  summarise(visits = sum(no_int, na.rm = TRUE)) |>
+  ungroup()
+
+# Lollipop chart for bees ----
+hvb |>
+  filter(pollinator == "Bee") |>
+  slice_max(order_by = visits, n = 3) |>
+  mutate(rank = c("A", "B", "C")) |>
+  ggplot(aes(x = rank, y = visits)) +
+  geom_point(fill = "#ECCED7") +
+  geom_linerange(aes(ymin = 0, ymax = visits)) +
+  labs(y = "Number of flower visits") +
+  scale_x_discrete(labels = c( "#1. Nuttail's Larkspur", 
+                               "#2. Blue Thimble Flower", 
+                               "#3. Mountain Owl's Clover")) +
+  scale_y_continuous(labels = scales::label_comma()) +
+  theme_minimal() +
+  theme(
+    # Axis labels
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(family = "quicksand", margin = margin(10,15,0,10),
+                                size = 40),
+    axis.text.x = element_text(size = 40, family = "quicksand", face = "bold"),
+    axis.text.y = element_text(size = 40, family = "quicksand"),
+    
+    # Grid lines
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    
+    # Margins
+    plot.margin = margin(10, 10, 10, 10),
+    plot.background = element_rect(color = "white", fill = "white")
+  )
+
+# Lollipop chart for flies ----
+hvb |>
+  filter(pollinator == "Hover-fly") |>
+  slice_max(order_by = visits, n = 3) |>
+  mutate(rank = c("A", "B", "C")) |>
+  ggplot(aes(x = rank, y = visits)) +
+  geom_point(fill = "#ECCED7") +
+  geom_linerange(aes(ymin = 0, ymax = visits)) +
+  labs(y = "Number of flower visits") +
+  scale_x_discrete(labels = c( "#1. Gray's Licorice Root",
+                               "#2. Oregon Sunshine", 
+                               "#3. Blue Thimble Flower" )) +
+  scale_y_continuous(labels = scales::label_comma(),
+                     breaks = c(0, 1000, 2000, 3000, 4000)) +
+  theme_minimal() +
+  theme(
+    # Axis labels
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(family = "quicksand", margin = margin(0,15,0,0),
+                                size = 40),
+    axis.text.x = element_text(size = 40, family = "quicksand", face = "bold"),
+    axis.text.y = element_text(size = 40, family = "quicksand"),
+    
+    # Grid lines
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    
+    # Margins
+    plot.margin = margin(10, 10, 10, 10),
+    plot.background = element_rect(color = "white", fill = "white")
+  )
+```
+
+
+
+
+
+
+

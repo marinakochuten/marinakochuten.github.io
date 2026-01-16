@@ -354,6 +354,34 @@
     "href": "posts.html",
     "title": "my work",
     "section": "",
-    "text": "Un-sung Pollination Hero\n\n\n\nMEDS\n\nData-viz\n\n\n\nIt’s a wasp! It’s a bee! No, it’s a… hoverfly?\n\n\n\n\n\nJan 16, 2026\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nBiodiversity Intactness Index change in Phoenix, AZ\n\n\n\nJupyter\n\nMEDS\n\nPython\n\n\n\nExamining changes in BII in the Phoenix county subdivision area between 2017 and 2020, shedding light on how urban growth affects biodiversity over time.\n\n\n\n\n\nDec 12, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing the 2017 Thomas Fire: A Python Analysis\n\n\n\nJupyter\n\nMEDS\n\nPython\n\n\n\nUsing AQI data and false color imagery to visualize the effects of the Thomas Fire on Santa Barbara county\n\n\n\n\n\nDec 12, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nChinook Salmon Harvest\n\n\n\nQuarto\n\nMEDS\n\nStats\n\nRandomization\n\n\n\nExploring Chinook salmon harvest within commercial and subsistence fishing sectors in the Aleutian Islands\n\n\n\n\n\nDec 7, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nPrioritizing Potential Aquaculture\n\n\n\nQuarto\n\nMEDS\n\nSpatial\n\n\n\nUsing key concepts in geospatial analysis to create a function that prioritizes maritime regions best suited for marine aquaculture\n\n\n\n\n\nNov 30, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nLandcover Classification\n\n\n\nQuarto\n\nMEDS\n\nSupervised-learning\n\n\n\nUsing a decision tree classifier to create a land cover classification for southern Santa Barbara County\n\n\n\n\n\nJan 14, 2024\n\n\nMarina Kochuten\n\n\n\n\n\nNo matching items"
+    "text": "Un-sung Pollination Hero\n\n\n\nMEDS\n\nData-viz\n\n\n\nIt’s a wasp! It’s a bee! No, it’s a… hoverfly?\n\n\n\n\n\nJan 16, 2026\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nBiodiversity Intactness Index change in Phoenix, AZ\n\n\n\nJupyter\n\nMEDS\n\nPython\n\n\n\nExamining changes in BII in the Phoenix county subdivision area between 2017 and 2020, shedding light on how urban growth affects biodiversity over time.\n\n\n\n\n\nDec 12, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizing the 2017 Thomas Fire: A Python Analysis\n\n\n\nJupyter\n\nMEDS\n\nPython\n\n\n\nUsing AQI data and false color imagery to visualize the effects of the Thomas Fire on Santa Barbara county\n\n\n\n\n\nDec 12, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nChinook Salmon Harvest\n\n\n\nQuarto\n\nMEDS\n\nStats\n\nRandomization\n\n\n\nExploring Chinook salmon harvest within commercial and subsistence fishing sectors in the Aleutian Islands\n\n\n\n\n\nDec 7, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nPrioritizing Potential Aquaculture\n\n\n\nQuarto\n\nMEDS\n\nSpatial\n\n\n\nUsing key concepts in geospatial analysis to create a function that prioritizes maritime regions best suited for marine aquaculture\n\n\n\n\n\nNov 30, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nblog post title\n\n\n\nQuarto\n\nMEDS\n\nsomething-cool\n\n\n\na short catchy description of the blog post\n\n\n\n\n\nOct 18, 2024\n\n\nMarina Kochuten\n\n\n\n\n\n\n\n\n\n\n\n\nLandcover Classification\n\n\n\nQuarto\n\nMEDS\n\nSupervised-learning\n\n\n\nUsing a decision tree classifier to create a land cover classification for southern Santa Barbara County\n\n\n\n\n\nJan 14, 2024\n\n\nMarina Kochuten\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog-posts/2024-10-18-my-first-post/index.html",
+    "href": "blog-posts/2024-10-18-my-first-post/index.html",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "href": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
+    "title": "blog post title",
+    "section": "",
+    "text": "I’m going to insert a footnote here1"
+  },
+  {
+    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "href": "blog-posts/2024-10-18-my-first-post/index.html#this-is-my-second",
+    "title": "blog post title",
+    "section": "This is my second",
+    "text": "This is my second\nHere’s my next paragraph2\nI’m citing Sam [1]\nHere is more random text. I’m going to cite a journal article now. [2]"
+  },
+  {
+    "objectID": "blog-posts/2024-10-18-my-first-post/index.html#footnotes",
+    "href": "blog-posts/2024-10-18-my-first-post/index.html#footnotes",
+    "title": "blog post title",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is a new footnote↩︎\nHere is my second footnote↩︎"
   }
 ]

@@ -22,7 +22,7 @@ warning: false
 messages: false
 format:
   html:
-    theme: styles.scss
+ #   theme: styles.scss
     page-layout: article
     toc: true
 ---
